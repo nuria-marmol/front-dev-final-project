@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Memory game | Match the photos</title>
+    <!-- 32x32 -->
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+    <meta name="author" content="Nuria Mármol">
+    <meta name="keywords" content="html, css, javascript, memory, game">
+    <meta name="description" content="Memory card game with photographies. Train your memory while having fun.">
+    <meta property="og:title" content="Memory game | Match the photos">
+    <meta property="og:type" content="website">
+    <!-- Añadir url de la web -->
+    <meta property="og:url" content="http://www.imdb.com/title/tt0117500/">
+    <!-- 400x300 -->
+    <meta property="og:image" content="img/miniatura.png">
+    <meta property="og:image:alt" content="Brain made with simple white lines">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/dist/desktop.css">
+    <link rel="stylesheet" href="assets/dist/mobile.css">
+    <!-- JavaScript -->
+    <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+    <!-- Pantalla de inicio del juego -->
+    <header>
+        <div>
+            <h1>Memory game</h1>
+            <img src="" alt="Brain made with simple white lines">
+        </div>
+        <!-- En "versión" móvil no tendríamos este div, ya que solo se va a poder jugar en versión escritorio. -->
+        <div>
+            <p>Play</p>
+            <button>
+                <img src="" alt="Play button">
+            </button>
+        </div>
+        <!-- Solo se ve este aviso al entrar desde un dispositivo móvil. -->
+        <div>
+            <img src="" alt="Warning">
+            <p>Oops, it looks like your device is too small for getting the best game experience.</p>
+            <p>Please come back when you're ready to play on your computer or tablet.</p>
+        </div>
+    </header>
+    <main>
+        <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
+        <section>
+            <div>
+                <button>
+                    <img src="" alt="Timer">
+                </button>
+                <!-- Desaparecerá al cabo de unos segundos. -->
+                <p>Timer is deactivated. Click to activate</p>
+                <!-- Solo se mostrará cuando se active el temporizador. -->
+                <p>1:00</p>
+            </div>
+            <!-- Tarjetas. Tendrá un display grid. -->
+            <div>
+                <!-- Reverso. Aquí irán los iconos minimalistas. -->
+                <div>
+                    <!-- Anverso. Aquí irán las fotografías. -->
+                    <div></div>
+                </div>
+            </div>
+            <div>
+                <label for="progress-bar">Lvl <span></span></label>
+                <progress id="progress-bar" max="" value=""></progress>
+            </div>
+            <div>
+                <button>
+                    Skip level <img src="" alt="Rightwards arrow">
+                </button>
+            </div>
+        </section>
+        <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos los textos. -->
+        <section>
+            <!-- Este h2 varía según el nivel. -->
+            <h2></h2>
+            <p>You completed this level.</p>
+            <p>Now... what?</p>
+            <div>
+                <button>Restart level</button>
+                <button>Next level</button>
+            </div>
+            <div>
+                <label for="progress">Lvl <span></span></label>
+                <progress id="progress" max="" value=""></progress>
+            </div>
+            <!-- Este botón solo se verá al completar el último nivel. -->
+            <div>
+                <button>
+                    Share game <img src="" alt="Share">
+                </button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Icons from The Noun Project</p>
+        <p>Photos and code by Nuria Mármol</p>
+    </footer>
+    <!-- Plantilla para las fotografías y los iconos del reverso de las tarjetas -->
+    <template>
+        <img src="" alt="">
+    </template>
+</body>
+</html>
