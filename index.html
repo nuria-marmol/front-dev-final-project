@@ -18,88 +18,90 @@
     <meta property="og:image:alt" content="Brain made with simple white lines">
     <!-- CSS -->
     <link rel="stylesheet" href="assets/dist/desktop.css">
-    <link rel="stylesheet" href="assets/dist/mobile.css">
     <!-- JavaScript -->
     <script defer src="assets/js/main.js"></script>
 </head>
 <body>
-    <!-- Pantalla de inicio del juego -->
-    <header>
-        <div>
-            <h1>Memory game</h1>
-            <img src="" alt="Brain made with simple white lines">
+    <!-- Pantalla de inicio del juego. En un primer momento solo se verá el header; lo demás estará oculto. Iremos mostrando la sección que toque. -->
+    <header class="game-menu">
+        <div class="game-menu__introduction">
+            <h1 class="game-menu__title">Memory game</h1>
+            <img class="game-menu__image" src="" alt="Brain made with simple white lines">
         </div>
         <!-- En "versión" móvil no tendríamos este div, ya que solo se va a poder jugar en versión escritorio. -->
-        <div>
-            <p>Play</p>
-            <button>
-                <img src="" alt="Play button">
+        <div class="game-menu__start">
+            <button class="game-menu__button">
+                Play <img class="game-menu-button__image" src="" alt="Play button">
             </button>
         </div>
         <!-- Solo se ve este aviso al entrar desde un dispositivo móvil. -->
-        <div>
-            <img src="" alt="Warning">
-            <p>Oops, it looks like your device is too small for getting the best game experience.</p>
-            <p>Please come back when you're ready to play on your computer or tablet.</p>
+        <div class="game-menu__warning">
+            <img class="game-menu-warning__image" src="" alt="Warning">
+            <p class="game-menu-warning__text">Oops, it looks like your device is too small for getting the best game experience.</p>
+            <p class="game-menu-warning__text">Please come back when you're ready to play on your computer or tablet.</p>
         </div>
     </header>
-    <main>
+    <main class="main">
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
-        <section>
-            <div>
-                <button>
-                    <img src="" alt="Timer">
+        <section class="all-levels">
+            <div class="all-levels__timer">
+                <button class="all-levels-timer__button">
+                    <img class="all-levels-timer__image" src="" alt="Timer">
                 </button>
                 <!-- Desaparecerá al cabo de unos segundos. -->
-                <p>Timer is deactivated. Click to activate</p>
+                <p class="all-levels-timer__text">Timer is deactivated. Click to activate</p>
                 <!-- Solo se mostrará cuando se active el temporizador. -->
-                <p>1:00</p>
+                <p class="all-levels-timer__countdown">1:00</p>
             </div>
             <!-- Tarjetas. Tendrá un display grid. -->
-            <div>
+            <div class="all-levels__cards">
                 <!-- Reverso. Aquí irán los iconos minimalistas. -->
-                <div>
+                <div class="all-levels-cards__back">
                     <!-- Anverso. Aquí irán las fotografías. -->
-                    <div></div>
+                    <div class="all-levels-cards__front"></div>
                 </div>
             </div>
-            <div>
-                <label for="progress-bar">Lvl <span></span></label>
-                <progress id="progress-bar" max="" value=""></progress>
+            <div class="all-levels__level-info level-info">
+                <label class="level-info__text" for="progress-bar">
+                    Lvl <span class="level-info__current-level"></span>
+                </label>
+                <progress class="level-info__progress-bar" id="progress-bar" max="" value=""></progress>
             </div>
-            <div>
-                <button>
-                    Skip level <img src="" alt="Rightwards arrow">
+            <div class="all-levels__next">
+                <button class="all-levels-next__button">
+                    Skip level <img class="all-levels-next__image" src="" alt="Rightwards arrow">
                 </button>
             </div>
         </section>
-        <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos los textos. -->
-        <section>
-            <!-- Este h2 varía según el nivel. -->
-            <h2></h2>
-            <p>You completed this level.</p>
-            <p>Now... what?</p>
-            <div>
-                <button>Restart level</button>
-                <button>Next level</button>
+        <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
+        <section class="between-levels">
+            <h2 class="between-levels__title"></h2>
+            <p class="between-levels__text"></p>
+            <!-- Este párrafo mantiene siempre el mismo texto. -->
+            <p class="between-levels__question">Now... what?</p>
+            <div class="between-levels__buttons">
+                <button class="between-levels__repeat-level"></button>
+                <button class="between-levels__next-level"></button>
             </div>
-            <div>
-                <label for="progress">Lvl <span></span></label>
-                <progress id="progress" max="" value=""></progress>
+            <div class="between-levels__level-info level-info">
+                <label class="level-info__text" for="progress">
+                    Lvl <span class="level-info__current-level"></span>
+                </label>
+                <progress class="level-info__progress-bar" id="progress" max="" value=""></progress>
             </div>
             <!-- Este botón solo se verá al completar el último nivel. -->
-            <div>
-                <button>
-                    Share game <img src="" alt="Share">
+            <div class="between-levels__share">
+                <button class="between-levels-share__button">
+                    Share game <img class="between-levels-share__image" src="" alt="Share">
                 </button>
             </div>
         </section>
     </main>
-    <footer>
-        <p>Icons from The Noun Project</p>
-        <p>Photos and code by Nuria Mármol</p>
+    <footer class="footer">
+        <p class="footer__text">Icons from The Noun Project</p>
+        <p class="footer__text">Photos and code by Nuria Mármol</p>
     </footer>
-    <!-- Plantilla para las fotografías y los iconos del reverso de las tarjetas -->
+    <!-- Plantilla para las fotografías (que tendrán la clase .all-levels-cards-front__image) y los iconos del reverso de las tarjetas (.all-levels-cards-back__image). -->
     <template>
         <img src="" alt="">
     </template>

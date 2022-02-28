@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="" />
+    <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,9 +38,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../modulo-diseno/diseño/curso-css" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -51,7 +59,14 @@
       <workItem from="1645779573734" duration="581000" />
       <workItem from="1645781962694" duration="2378000" />
       <workItem from="1645792548636" duration="8772000" />
-      <workItem from="1645808003190" duration="1367000" />
+      <workItem from="1645808003190" duration="1548000" />
+      <workItem from="1646034877247" duration="297000" />
+      <workItem from="1646055971795" duration="34000" />
+      <workItem from="1646056067643" duration="25000" />
+      <workItem from="1646056103729" duration="61000" />
+      <workItem from="1646056183625" duration="33000" />
+      <workItem from="1646056221894" duration="31000" />
+      <workItem from="1646056272507" duration="4977000" />
     </task>
     <servers />
   </component>
