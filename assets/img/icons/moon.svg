@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="420pt"
+   height="420pt"
+   version="1.1"
+   viewBox="0 0 420 420"
+   id="svg13306"
+   sodipodi:docname="moon.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs13310" />
+  <sodipodi:namedview
+     id="namedview13308"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.825"
+     inkscape:cx="280.60606"
+     inkscape:cy="373.33333"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg13306" />
+  <path
+     d="m 210.0119,0.0119 c 9.4102,0 18.672,0.62891 27.75,1.8281 -75.887,11.613 -134.02,77.168 -134.02,156.3 0,87.332 70.797,158.13 158.13,158.13 79.133,0 144.69,-58.129 156.3,-134.02 C 419.3711,191.332 420,200.594 420,210 420,325.98 325.98,420 210,420 94.02,420 0,325.98 0,210 0,94.02 94.02,0 210,0 Z"
+     fill-rule="evenodd"
+     id="path13304" />
+</svg>

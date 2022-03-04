@@ -2,7 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gugi-regular.otf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gugi-regular.woff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/fonts/gugi-regular.woff2" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/alert.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/arrows.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/brain.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/flower.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/maze.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/moon.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/play.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/share.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/icons/timer.svg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/mixins.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -16,6 +35,7 @@
         <option value="HTML File" />
         <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="Sass File" />
       </list>
     </option>
   </component>
@@ -34,16 +54,19 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/fonts" />
+    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\fonts" />
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\icons" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project" />
     </key>
   </component>
@@ -66,7 +89,11 @@
       <workItem from="1646056103729" duration="61000" />
       <workItem from="1646056183625" duration="33000" />
       <workItem from="1646056221894" duration="31000" />
-      <workItem from="1646056272507" duration="4977000" />
+      <workItem from="1646056272507" duration="5114000" />
+      <workItem from="1646073593918" duration="5000" />
+      <workItem from="1646246695917" duration="698000" />
+      <workItem from="1646293759052" duration="14000" />
+      <workItem from="1646382717259" duration="4604000" />
     </task>
     <servers />
   </component>
@@ -83,5 +110,8 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="301.28101pt"
+   height="162.39999pt"
+   version="1.1"
+   viewBox="0 0 301.28101 162.39999"
+   id="svg4030"
+   sodipodi:docname="arrows.svg"
+   inkscape:version="1.1.2 (b8e25be833, 2022-02-05)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview4032"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:document-units="pt"
+     showgrid="false"
+     inkscape:zoom="0.825"
+     inkscape:cx="201.81818"
+     inkscape:cy="298.18182"
+     inkscape:window-width="1920"
+     inkscape:window-height="974"
+     inkscape:window-x="-11"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g4028" />
+  <defs
+     id="defs3942" />
+  <g
+     id="g4028"
+     transform="translate(-199.359,-198.8)">
+    <path
+       d="m 338.8,198.8 81.199,81.199 -81.199,81.199 h 80.641 L 500.64,279.999 419.441,198.8 Z M 414.96,350 h -48.719 l 69.996,-70 -70,-70 h 48.719 l 70.004,70 z"
+       id="path3944" />
+    <path
+       d="M 280,361.2 361.199,280.001 280,198.802 h -80.641 l 81.199,81.199 -81.199,81.199 z M 226.238,210 h 48.719 l 70.004,70 -70,70 h -48.719 l 69.996,-70 z"
+       id="path3946" />
+  </g>
+</svg>
