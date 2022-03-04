@@ -25,15 +25,16 @@
      showgrid="false"
      inkscape:zoom="0.825"
      inkscape:cx="280.60606"
-     inkscape:cy="373.33333"
-     inkscape:window-width="1920"
-     inkscape:window-height="974"
-     inkscape:window-x="-11"
-     inkscape:window-y="-11"
-     inkscape:window-maximized="1"
+     inkscape:cy="276.36364"
+     inkscape:window-width="1784"
+     inkscape:window-height="1008"
+     inkscape:window-x="38"
+     inkscape:window-y="0"
+     inkscape:window-maximized="0"
      inkscape:current-layer="svg13306" />
   <path
      d="m 210.0119,0.0119 c 9.4102,0 18.672,0.62891 27.75,1.8281 -75.887,11.613 -134.02,77.168 -134.02,156.3 0,87.332 70.797,158.13 158.13,158.13 79.133,0 144.69,-58.129 156.3,-134.02 C 419.3711,191.332 420,200.594 420,210 420,325.98 325.98,420 210,420 94.02,420 0,325.98 0,210 0,94.02 94.02,0 210,0 Z"
      fill-rule="evenodd"
-     id="path13304" />
+     id="path13304"
+     style="fill:#ffffff" />
 </svg>
