@@ -360,6 +360,35 @@ h1 {
   text-transform: uppercase;
 }
 
+.game-menu__title {
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  height: 100%;
+}
+
 .hidden {
   display: none;
+}
+
+.game-menu__introduction {
+  padding-top: 8rem;
+  padding-left: 2.4rem;
+}
+
+.game-menu {
+  height: 100%;
+  background-color: #000000;
+}
+.game-menu__title {
+  margin: 0;
 }

@@ -2,23 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/sass/main/vendors/_normalize.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_base.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/dist/mobile.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/game-title.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/alert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/alert.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/arrows.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/arrows.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/brain.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/brain.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/maze.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/maze.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/moon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/play.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/timer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/timer.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
@@ -26,6 +14,10 @@
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_base.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -63,17 +55,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/sass/main/vendors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\sass\main\vendors" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\sass\mobile\base" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\icons" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\fonts" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -101,6 +93,7 @@
       <workItem from="1646293759052" duration="14000" />
       <workItem from="1646382717259" duration="4965000" />
       <workItem from="1646394242408" duration="13303000" />
+      <workItem from="1646493582991" duration="8582000" />
     </task>
     <servers />
   </component>

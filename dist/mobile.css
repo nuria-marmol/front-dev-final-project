@@ -360,6 +360,73 @@ h1 {
   text-transform: uppercase;
 }
 
+.game-menu__title {
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  height: 100%;
+}
+
 .hidden {
   display: none;
+}
+
+.game-menu__introduction {
+  padding-top: 8rem;
+  padding-left: 2.4rem;
+}
+
+.game-menu {
+  height: 100%;
+  background-color: #000000;
+}
+.game-menu__title {
+  margin: 0;
+}
+
+.game-menu-warning__text {
+  font-size: 1.1rem;
+  padding-left: 1rem;
+}
+
+.game-menu__introduction {
+  max-width: 80%;
+  margin: 0 auto 3rem;
+}
+
+.game-menu__start {
+  display: none;
+}
+
+.game-menu__warning {
+  position: relative;
+}
+
+.game-menu-warning__image {
+  width: 2rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.game-menu__warning {
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  border: 2px solid #ffffff;
+  border-radius: 1rem;
+  max-width: 65%;
+  max-height: 14rem;
+}
+
+.game-menu-warning__text {
+  margin-top: 2rem;
 }
