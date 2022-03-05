@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* Colores */
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -343,27 +342,6 @@ template {
   display: none;
 }
 
-/* Nuestra tipografía */
-@font-face {
-  font-family: Gugi;
-  src: url("../assets/fonts/gugi-regular.woff2") format("woff2");
-  src: url("../assets/fonts/gugi-regular.woff") format("woff");
-  src: url("../assets/fonts/gugi-regular.otf") format("opentype");
-  font-weight: 400;
-}
-body {
-  font-family: Gugi, sans-serif;
-  color: #ffffff;
-}
-
-h1 {
-  text-transform: uppercase;
-}
-
-.game-menu__title {
-  text-align: center;
-}
-
 html, body {
   height: 100%;
 }
@@ -380,15 +358,66 @@ section {
   display: none;
 }
 
-.game-menu__introduction {
-  padding-top: 8rem;
-  padding-left: 2.4rem;
+/* Nuestra tipografía */
+@font-face {
+  font-family: Gugi;
+  src: url("../assets/fonts/gugi-regular.woff2") format("woff2");
+  src: url("../assets/fonts/gugi-regular.woff") format("woff");
+  src: url("../assets/fonts/gugi-regular.otf") format("opentype");
+  font-weight: 400;
+}
+body {
+  font-family: Gugi, sans-serif;
+  color: #fff;
+}
+
+h1 {
+  text-transform: uppercase;
 }
 
 .game-menu {
   height: 100%;
-  background-color: #000000;
+  background-color: #000;
 }
-.game-menu__title {
-  margin: 0;
+
+.game-menu__intro {
+  margin: 0 auto 6rem;
+  width: 55%;
+  padding: 6rem 0 0 3.8rem;
+}
+.game-menu__start {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.game-menu__warning {
+  display: none;
+}
+
+.game-menu-start__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2rem;
+  border: transparent;
+  width: 10rem;
+}
+
+.game-menu-start__image {
+  width: 3rem;
 }

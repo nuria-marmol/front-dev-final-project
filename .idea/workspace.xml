@@ -2,20 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/img/game-title.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/img/icons/brain.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_base.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
@@ -93,7 +95,7 @@
       <workItem from="1646293759052" duration="14000" />
       <workItem from="1646382717259" duration="4965000" />
       <workItem from="1646394242408" duration="13303000" />
-      <workItem from="1646493582991" duration="8582000" />
+      <workItem from="1646493582991" duration="16944000" />
     </task>
     <servers />
   </component>
