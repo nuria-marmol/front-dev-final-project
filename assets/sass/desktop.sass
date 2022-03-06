@@ -1,23 +1,28 @@
+// Todo el contenido de main.sass
 @import 'main/main'
 
+// Abstracts/utils
 @import 'desktop/abstracts/variables'
 @import 'desktop/abstracts/mixins'
 
+// Base
 @import 'desktop/base/base'
 @import 'desktop/base/typography'
 
+// Components
 @import 'desktop/components/buttons'
 @import 'desktop/components/progress-bar'
 
+// Layout
 @import 'desktop/layout/header'
 @import 'desktop/layout/grid'
 @import 'desktop/layout/footer'
 
 .between-levels
   @include bg-image-position("../assets/img/level1/smoke.jpg", top)
-    size: cover
-    repeat: no-repeat
-  font-size: 1.3rem
+  background-size: cover
+  background-repeat: no-repeat
+  font-size: $medium-size
   &__title
     text-align: center
     font-size: $largest-size

@@ -346,16 +346,12 @@ html, body {
   height: 100%;
 }
 
+main, section {
+  height: 100%;
+}
+
 img {
   width: 100%;
-}
-
-main {
-  height: 100%;
-}
-
-section {
-  height: 100%;
 }
 
 .hidden {
@@ -380,20 +376,71 @@ body {
   background-color: #000;
 }
 
+h1 {
+  margin: 0;
+}
+
+.between-levels-share__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+  padding: 1rem 1.2rem 1rem;
+  font-size: 1.3rem;
+}
+
+.between-levels__buttons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25%;
+  margin-top: 5%;
+}
+
 .between-levels-buttons__button {
   background-color: #000;
   color: #fff;
   border: 2px solid #fff;
   border-radius: 1rem;
-  font-size: 1.3rem;
   width: 11rem;
   padding: 1rem 0 1rem;
+  font-size: 1.3rem;
+}
+
+.level-info__progress-border {
+  width: 8.5rem;
+  height: 0.9rem;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+.level-info__progress-fill {
+  height: 100%;
+  width: 1.7rem;
+  background-color: #fff;
+  border-radius: 1rem;
 }
 
 .game-menu__intro {
   margin: 0 auto 6rem;
-  width: 55%;
   padding: 6rem 0 0 3.8rem;
+  width: 55%;
 }
 .game-menu__start {
   display: -webkit-box;
@@ -423,7 +470,7 @@ body {
   gap: 1rem;
   background-color: transparent;
   color: #fff;
-  font-size: 2rem;
+  font-size: 2.2rem;
   border: transparent;
   width: 10rem;
 }
@@ -432,74 +479,26 @@ body {
   width: 3rem;
 }
 
-h1 {
-  margin: 0;
-}
-
 .between-levels {
   background-image: url("../assets/img/level1/smoke.jpg");
+  background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: top;
   font-size: 1.3rem;
 }
-
-/* Se añade una de estas dos clases para cambiar la imagen de fondo */
-.between-levels--pic-change {
-  background-image: url("../assets/img/level2/woman.jpg");
-  background-position: center;
-}
-
-.between-levels--last-change {
-  background-image: url("../assets/img/level3/yellow-flower.jpg");
-  background-position: center;
-}
-
 .between-levels__title {
   text-align: center;
   font-size: 2.2rem;
   padding-top: 8rem;
 }
-
 .between-levels__text {
   text-align: center;
   font-size: 1.8rem;
 }
-
 .between-levels__question {
   text-align: center;
   font-size: 1.8rem;
 }
-
-.between-levels__share {
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-}
-
-.between-levels-share__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.5rem;
-  background-color: transparent;
-  color: #fff;
-  border: 2px solid #fff;
-  border-radius: 0.8rem;
-  padding: 1rem 1.2rem 1rem;
-  font-size: 1.3rem;
-}
-
-.between-levels-share__image {
-  width: 2rem;
-}
-
 .between-levels__level-info {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -518,31 +517,23 @@ h1 {
   margin-left: -96px;
   font-size: 1.3rem;
 }
-
-.level-info__progress-border {
-  width: 8.5rem;
-  height: 0.9rem;
-  border: 2px solid #fff;
-  border-radius: 1rem;
+.between-levels__share {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
 }
 
-.level-info__progress-fill {
-  height: 100%;
-  width: 1.7rem;
-  background-color: #fff;
-  border-radius: 1rem;
+/* Se añade una de estas dos clases para cambiar la imagen de fondo */
+.between-levels--pic-change {
+  background-image: url("../assets/img/level2/woman.jpg");
+  background-position: center;
 }
 
-.between-levels__buttons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 25%;
-  margin-top: 5%;
+.between-levels--last-change {
+  background-image: url("../assets/img/level3/yellow-flower.jpg");
+  background-position: center;
+}
+
+.between-levels-share__image {
+  width: 2rem;
 }
