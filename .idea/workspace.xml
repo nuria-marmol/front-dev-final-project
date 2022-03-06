@@ -2,11 +2,36 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/img/level1/ferris-wheel.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level1/harbour.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level1/psychedelic.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level1/smoke.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level1/stars.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/bridge.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/church.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/deer.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/elephants.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/houses.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/phone-box.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/window.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level2/woman.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/bellflowers.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/branches.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/daisies.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/electricity-pylon.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/leaves.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/path.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/river.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/seeds.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/water-lilies.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/img/level3/yellow-flower.JPG" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/brain.svg" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_variables.sass" afterDir="false" />
@@ -15,7 +40,6 @@
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
@@ -40,6 +64,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
@@ -57,17 +89,17 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/level3" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\level3" />
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\level2" />
+      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\level1-pics" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img" />
       <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\sass\main\vendors" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\sass\mobile\base" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\icons" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\fonts" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -96,6 +128,7 @@
       <workItem from="1646382717259" duration="4965000" />
       <workItem from="1646394242408" duration="13303000" />
       <workItem from="1646493582991" duration="16944000" />
+      <workItem from="1646569319163" duration="14476000" />
     </task>
     <servers />
   </component>

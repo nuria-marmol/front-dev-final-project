@@ -350,6 +350,10 @@ img {
   width: 100%;
 }
 
+main {
+  height: 100%;
+}
+
 section {
   height: 100%;
 }
@@ -369,10 +373,6 @@ section {
 body {
   font-family: Gugi, sans-serif;
   color: #fff;
-}
-
-h1 {
-  text-transform: uppercase;
 }
 
 .game-menu {

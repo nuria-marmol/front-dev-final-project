@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Pantalla de inicio del juego. En un primer momento solo se verá el header; lo demás estará oculto. Iremos mostrando la sección que toque. -->
-    <header class="game-menu">
+    <header class="game-menu hidden">
         <div class="game-menu__intro">
             <img class="game-menu-intro__image" src="assets/img/game-title.png" alt="Brain made with simple white lines">
         </div>
@@ -62,10 +62,13 @@
                 </div>
             </div>
             <div class="all-levels__level-info level-info">
-                <label class="level-info__text" for="progress-bar">
+                <p class="level-info__text">
                     Lvl <span class="level-info__current-level"></span>
-                </label>
-                <progress class="level-info__progress-bar" id="progress-bar" max="" value=""></progress>
+                </p>
+                <!-- Un div en lugar de <progress> para poder personalizarla -->
+                <div class="level-info__progress-border">
+                    <div class="level-info__progress-fill"></div>
+                </div>
             </div>
             <div class="all-levels__next">
                 <button class="all-levels-next__button">
@@ -74,20 +77,22 @@
             </div>
         </section>
         <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
-        <section class="between-levels hidden">
-            <h2 class="between-levels__title">Nice!</h2>
+        <section class="between-levels">
+            <h1 class="between-levels__title">Nice!</h1>
             <p class="between-levels__text">You completed this level.</p>
             <!-- Este párrafo mantiene siempre el mismo texto. -->
             <p class="between-levels__question">Now... what?</p>
             <div class="between-levels__buttons">
-                <button class="between-levels-buttons__repeat">Restart level</button>
-                <button class="between-levels-buttons__next">Next level</button>
+                <button class="between-levels-buttons__button">Restart level</button>
+                <button class="between-levels-buttons__button">Next level</button>
             </div>
             <div class="between-levels__level-info level-info">
-                <label class="level-info__text" for="progress">
+                <p class="level-info__text">
                     Lvl <span class="level-info__current-level">1</span>
-                </label>
-                <progress class="level-info__progress-bar" id="progress" max="" value=""></progress>
+                </p>
+                <div class="level-info__progress-border">
+                    <div class="level-info__progress-fill"></div>
+                </div>
             </div>
             <!-- Este botón solo se verá al completar el último nivel. -->
             <div class="between-levels__share">

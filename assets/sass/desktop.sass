@@ -1,5 +1,6 @@
 @import 'main/main'
 
+@import 'desktop/abstracts/variables'
 @import 'desktop/abstracts/mixins'
 
 @import 'desktop/base/base'
@@ -10,3 +11,84 @@
 @import 'desktop/layout/header'
 @import 'desktop/layout/grid'
 @import 'desktop/layout/footer'
+
+h1
+  margin: 0
+
+.between-levels
+  background-image: url("../assets/img/level1/smoke.jpg")
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: top
+  font-size: 1.3rem
+
+/* Se añade una de estas dos clases para cambiar la imagen de fondo */
+.between-levels--pic-change
+  background-image: url("../assets/img/level2/woman.jpg")
+  background-position: center
+
+.between-levels--last-change
+  background-image: url("../assets/img/level3/yellow-flower.jpg")
+  background-position: center
+
+.between-levels__title
+  text-align: center
+  font-size: $largest-size
+  padding-top: 8rem
+
+.between-levels__text
+  text-align: center
+  font-size: $large-size
+
+.between-levels__question
+  text-align: center
+  font-size: $large-size
+
+.between-levels__share
+  position: absolute
+  top: 1rem
+  left: 1rem
+
+.between-levels-share__button
+  @include flex-center
+  gap: .5rem
+  //width: 13rem
+  //height: 4rem
+  background-color: transparent
+  color: $white-colour
+  border: 2px solid $white-colour
+  border-radius: .8rem
+  padding: 1rem 1.2rem 1rem
+  font-size: $medium-size
+
+.between-levels-share__image
+  width: 2rem
+
+.between-levels__level-info
+  display: flex
+  justify-content: center
+  align-items: center
+  gap: .5rem
+  height: 1.5rem
+  position: absolute
+  bottom: 1rem
+  left: 50%
+  margin-left: -96px
+  font-size: $medium-size
+
+.level-info__progress-border
+  width: 8.5rem
+  height: .9rem
+  border: 2px solid $white-colour
+  border-radius: 1rem
+
+.level-info__progress-fill
+  height: 100%
+  width: 1.7rem
+  background-color: $white-colour
+  border-radius: 1rem
+
+.between-levels__buttons
+  @include flex-center
+  gap: 25%
+  margin-top: 5%
