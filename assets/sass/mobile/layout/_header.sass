@@ -1,24 +1,25 @@
 .game-menu
   &__intro
     margin: 0 auto 3.5rem
-    width: 70%
     padding: 6rem 0 0 2.3rem
+    width: 70%
   &__start
     display: none
   &__warning
-    margin: 0 auto
+    /* Para colocar la imagen respecto al padre */
     position: relative
+    margin: 0 auto
     padding: 2rem 1rem
-    border: 2px solid $white-colour
-      radius: 1rem
+    @include white-border
     width: 65%
     max-height: 14rem
 
 .game-menu-warning__image
-  width: 2rem
   position: absolute
   top: 1rem
   left: 1rem
+  width: 2rem
 
 .game-menu-warning__text
   margin-top: 2rem
+  padding-left: 1rem

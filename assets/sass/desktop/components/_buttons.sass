@@ -1,8 +1,21 @@
+.between-levels-share__button
+  @include flex-center
+  gap: .5rem
+  background-color: transparent
+  color: $white-colour
+  @include white-border
+  padding: 1rem 1.2rem 1rem
+  font-size: $medium-size
+
+.between-levels__buttons
+  @include flex-center
+  gap: 25%
+  margin-top: 5%
+
 .between-levels-buttons__button
   background-color: $black-colour
   color: $white-colour
-  border: 2px solid $white-colour
-  border-radius: 1rem
-  font-size: $medium-size
+  @include white-border
   width: 11rem
   padding: 1rem 0 1rem
+  font-size: $medium-size

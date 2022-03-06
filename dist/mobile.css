@@ -346,16 +346,12 @@ html, body {
   height: 100%;
 }
 
+main, section {
+  height: 100%;
+}
+
 img {
   width: 100%;
-}
-
-main {
-  height: 100%;
-}
-
-section {
-  height: 100%;
 }
 
 .hidden {
@@ -380,22 +376,22 @@ body {
   background-color: #000;
 }
 
-.game-menu-warning__text {
+p {
   font-size: 1.1rem;
-  padding-left: 1rem;
 }
 
 .game-menu__intro {
   margin: 0 auto 3.5rem;
-  width: 70%;
   padding: 6rem 0 0 2.3rem;
+  width: 70%;
 }
 .game-menu__start {
   display: none;
 }
 .game-menu__warning {
-  margin: 0 auto;
+  /* Para colocar la imagen respecto al padre */
   position: relative;
+  margin: 0 auto;
   padding: 2rem 1rem;
   border: 2px solid #fff;
   border-radius: 1rem;
@@ -404,12 +400,13 @@ body {
 }
 
 .game-menu-warning__image {
-  width: 2rem;
   position: absolute;
   top: 1rem;
   left: 1rem;
+  width: 2rem;
 }
 
 .game-menu-warning__text {
   margin-top: 2rem;
+  padding-left: 1rem;
 }
