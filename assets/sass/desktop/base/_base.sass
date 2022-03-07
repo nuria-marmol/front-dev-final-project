@@ -1,2 +1,18 @@
-h1
-  margin: 0
+/* Para las tarjetas */
+.container
+  @include container(950px)
+
+.container--2
+  @include container(700px)
+
+.container--3
+  @include container(800px)
+
+/* Lo usamos tanto en las pantallas de los niveles como en las pantallas intermedias */
+.level-info
+  @include flex-center(.5rem)
+  height: 1.5rem
+  position: absolute
+  bottom: 1rem
+  left: 50%
+  margin-left: -96px

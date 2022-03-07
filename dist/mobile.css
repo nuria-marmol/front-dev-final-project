@@ -371,6 +371,7 @@ body {
   color: #fff;
 }
 
+/* Header */
 .game-menu {
   height: 100%;
   background-color: #000;
@@ -378,8 +379,11 @@ body {
 
 p {
   font-size: 1.1rem;
+  margin-top: 2rem;
+  padding-left: 1rem;
 }
 
+/* Header */
 .game-menu__intro {
   margin: 0 auto 3.5rem;
   padding: 6rem 0 0 2.3rem;
@@ -389,7 +393,7 @@ p {
   display: none;
 }
 .game-menu__warning {
-  /* Para colocar la imagen respecto al padre */
+  /* Para colocar la imagen respecto a esta clase */
   position: relative;
   margin: 0 auto;
   padding: 2rem 1rem;
@@ -406,7 +410,6 @@ p {
   width: 2rem;
 }
 
-.game-menu-warning__text {
-  margin-top: 2rem;
-  padding-left: 1rem;
+.main {
+  display: none;
 }

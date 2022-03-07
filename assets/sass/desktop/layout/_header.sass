@@ -1,3 +1,4 @@
+/* Header */
 .game-menu
   display: flex
   justify-content: space-evenly
@@ -8,20 +9,11 @@
     width: 55%
     padding-left: 3.8rem
   &__start
-    @include flex-center
+    @include flex-center(0)
   &__warning
     display: none
 
-.game-menu-start__button
-  @include flex-center
-  gap: 1rem
-  background-color: transparent
-  color: $white-colour
-  font-size: $largest-size
-  border: transparent
-  width: 10rem
-
-.game-menu-start__image
-  width: 3rem
-
+/* Usar esta clase para ocultar el header. No nos sirve la que habíamos preparado anteriormente (.hidden) porque el display flex la sobreescribe. */
+.game-menu--hide
+  display: none
 

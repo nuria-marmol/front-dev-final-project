@@ -371,13 +371,89 @@ body {
   color: #fff;
 }
 
+/* Header */
 .game-menu {
   height: 100%;
   background-color: #000;
 }
 
+/* Para las tarjetas */
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container--2 {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.container--3 {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+/* Lo usamos tanto en las pantallas de los niveles como en las pantallas intermedias */
+.level-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  margin-left: -96px;
+}
+
 h1 {
+  font-size: 2.2rem;
   margin: 0;
+}
+
+.all-levels {
+  font-size: 1.3rem;
+}
+
+.between-levels {
+  font-size: 1.3rem;
+}
+
+.between-levels__text {
+  font-size: 1.8rem;
+  margin: 0;
+}
+
+/* Botones */
+.game-menu-start__button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  background-color: transparent;
+  color: #fff;
+  font-size: 2.2rem;
+  border: transparent;
+  width: 10rem;
+}
+
+.game-menu-start__image {
+  width: 3rem;
 }
 
 .between-levels-share__button {
@@ -396,7 +472,6 @@ h1 {
   border: 2px solid #fff;
   border-radius: 1rem;
   padding: 1rem 1.2rem 1rem;
-  font-size: 1.3rem;
 }
 
 .between-levels__buttons {
@@ -410,12 +485,42 @@ h1 {
   border-radius: 1rem;
   width: 11rem;
   padding: 1rem 0 1rem;
-  font-size: 1.3rem;
 }
 .between-levels-buttons__button--next {
   margin-left: 11rem;
 }
 
+.all-levels-timer__button {
+  background-color: transparent;
+  border: transparent;
+  width: 2.5rem;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+}
+
+.all-levels-next__button {
+  background-color: transparent;
+  border: transparent;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0.5rem;
+  width: 11rem;
+}
+
+.all-levels-next__image {
+  width: 2.5rem;
+}
+
+/* Barra de progreso personalizada */
 .level-info__progress-border {
   width: 8.5rem;
   height: 0.9rem;
@@ -430,6 +535,7 @@ h1 {
   border-radius: 1rem;
 }
 
+/* Header */
 .game-menu {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -460,33 +566,18 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 0;
 }
 .game-menu__warning {
   display: none;
 }
 
-.game-menu-start__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 1rem;
-  background-color: transparent;
-  color: #fff;
-  font-size: 2.2rem;
-  border: transparent;
-  width: 10rem;
+/* Usar esta clase para ocultar el header. No nos sirve la que habíamos preparado anteriormente (.hidden) porque el display flex la sobreescribe. */
+.game-menu--hide {
+  display: none;
 }
 
-.game-menu-start__image {
-  width: 3rem;
-}
-
+/* Footer */
 .footer {
   position: absolute;
   bottom: 1.1rem;
@@ -498,12 +589,44 @@ h1 {
   text-align: right;
 }
 
+/* Levels section */
+.all-levels {
+  background-color: #2C1B6F;
+}
+.all-levels-timer__text {
+  margin: 0;
+  position: absolute;
+  top: 1.6rem;
+  left: 4rem;
+}
+.all-levels-timer__countdown {
+  margin: 0;
+  position: absolute;
+  top: 1.6rem;
+  left: 4rem;
+}
+.all-levels__next {
+  width: 7rem;
+  position: absolute;
+  bottom: 1rem;
+  right: 4.4rem;
+}
+
+/* Usar estas dos clases para cambiar el color de fondo del nivel */
+.all-levels--first-change {
+  background-color: #000;
+}
+
+.all-levels--second-change {
+  background-color: #996239;
+}
+
+/* Between levels section */
 .between-levels {
   background-image: url("../assets/img/level1/smoke.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
-  font-size: 1.3rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -513,43 +636,11 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  gap: 2.5rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 2.5rem;
-}
-.between-levels__title {
-  text-align: center;
-  font-size: 2.2rem;
-}
-.between-levels__text {
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 0;
-}
-.between-levels__question {
-  text-align: center;
-  font-size: 1.8rem;
-  margin: 0;
-}
-.between-levels__level-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0.5rem;
-  height: 1.5rem;
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  margin-left: -96px;
-  font-size: 1.3rem;
 }
 .between-levels__share {
   position: absolute;
@@ -557,17 +648,22 @@ h1 {
   left: 1rem;
 }
 
-/* Se añade una de estas dos clases para cambiar la imagen de fondo */
-.between-levels--pic-change {
-  background-image: url("../assets/img/level2/woman.jpg");
-  background-position: center;
-}
-
-.between-levels--last-change {
-  background-image: url("../assets/img/level3/yellow-flower.jpg");
-  background-position: center;
+/* Usar esta clase para ocultar/mostrar la sección entre niveles */
+.between-levels--hide {
+  display: none;
 }
 
 .between-levels-share__image {
   width: 2rem;
+}
+
+/* Añadir estas dos clases para cambiar la imagen de fondo */
+.between-levels--first-change {
+  background-image: url("../assets/img/level2/woman.jpg");
+  background-position: center;
+}
+
+.between-levels--second-change {
+  background-image: url("../assets/img/level3/yellow-flower.jpg");
+  background-position: center;
 }

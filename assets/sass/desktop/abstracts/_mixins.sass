@@ -1,7 +1,17 @@
-@mixin flex-center
+@mixin container($width)
+  max-width: $width
+  margin: 0 auto
+  padding: 1rem
+
+@mixin text-nomargin($size)
+  font-size: $size
+  margin: 0
+
+@mixin flex-center($space)
   display: flex
   justify-content: center
   align-items: center
+  gap: $space
 
 @mixin bg-image-position($url, $position)
   background:

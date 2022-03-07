@@ -18,46 +18,54 @@
 @import 'desktop/layout/grid'
 @import 'desktop/layout/footer'
 
+/* Levels section */
+.all-levels
+  background-color: $electric-blue
+  &-timer__text
+    margin: 0
+    position: absolute
+    top: 1.6rem
+    left: 4rem
+  &-timer__countdown
+    margin: 0
+    position: absolute
+    top: 1.6rem
+    left: 4rem
+  &__next
+    width: 7rem
+    position: absolute
+    bottom: 1rem
+    right: 4.4rem
+
+/* Usar estas dos clases para cambiar el color de fondo del nivel */
+.all-levels--first-change
+  background-color: $black-colour
+
+.all-levels--second-change
+  background-color: $brown-colour
+
+/* Between levels section */
 .between-levels
   @include bg-image-position("../assets/img/level1/smoke.jpg", top)
   background-size: cover
   background-repeat: no-repeat
-  font-size: $medium-size
-  @include flex-center
+  @include flex-center(2.5rem)
   flex-direction: column
-  gap: 2.5rem
-  &__title
-    text-align: center
-    font-size: $largest-size
-    //padding-top: 8rem
-  &__text
-    text-align: center
-    font-size: $large-size
-    margin: 0
-  &__question
-    text-align: center
-    font-size: $large-size
-    margin: 0
-  &__level-info
-    @include flex-center
-    gap: .5rem
-    height: 1.5rem
-    position: absolute
-    bottom: 1rem
-    left: 50%
-    margin-left: -96px
-    font-size: $medium-size
   &__share
     position: absolute
     top: 1rem
     left: 1rem
 
-/* Se añade una de estas dos clases para cambiar la imagen de fondo */
-.between-levels--pic-change
-  @include bg-image-position("../assets/img/level2/woman.jpg", center)
-
-.between-levels--last-change
-  @include bg-image-position("../assets/img/level3/yellow-flower.jpg", center)
+/* Usar esta clase para ocultar/mostrar la sección entre niveles */
+.between-levels--hide
+  display: none
 
 .between-levels-share__image
   width: 2rem
+
+/* Añadir estas dos clases para cambiar la imagen de fondo */
+.between-levels--first-change
+  @include bg-image-position("../assets/img/level2/woman.jpg", center)
+
+.between-levels--second-change
+  @include bg-image-position("../assets/img/level3/yellow-flower.jpg", center)

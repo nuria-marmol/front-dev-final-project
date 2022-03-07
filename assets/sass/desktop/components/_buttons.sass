@@ -1,11 +1,21 @@
+/* Botones */
+.game-menu-start__button
+  @include flex-center(1rem)
+  background-color: transparent
+  color: $white-colour
+  font-size: $largest-size
+  border: transparent
+  width: 10rem
+
+.game-menu-start__image
+  width: 3rem
+
 .between-levels-share__button
-  @include flex-center
-  gap: .5rem
+  @include flex-center(.5rem)
   background-color: transparent
   color: $white-colour
   @include white-border
   padding: 1rem 1.2rem 1rem
-  font-size: $medium-size
 
 .between-levels__buttons
   margin-top: 2rem
@@ -16,6 +26,23 @@
   @include white-border
   width: 11rem
   padding: 1rem 0 1rem
-  font-size: $medium-size
   &--next
     margin-left: 11rem
+
+.all-levels-timer__button
+  background-color: transparent
+  border: transparent
+  width: 2.5rem
+  position: absolute
+  top: 1rem
+  left: 1rem
+
+.all-levels-next__button
+  background-color: transparent
+  border: transparent
+  color: $white-colour
+  @include flex-center(.5rem)
+  width: 11rem
+
+.all-levels-next__image
+  width: 2.5rem

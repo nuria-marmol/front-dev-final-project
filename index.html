@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Pantalla de inicio del juego. En un primer momento solo se verá el header; lo demás estará oculto. Iremos mostrando la sección que toque. -->
-    <header class="game-menu" style="display:none">
+    <header class="game-menu game-menu--hide">
         <div class="game-menu__intro">
             <img class="game-menu-intro__image" src="assets/img/game-title.png" alt="Brain made with simple white lines">
         </div>
@@ -43,7 +43,7 @@
     </header>
     <main class="main">
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
-        <section class="all-levels hidden">
+        <section class="all-levels">
             <div class="all-levels__timer">
                 <button class="all-levels-timer__button">
                     <img class="all-levels-timer__image" src="assets/img/icons/timer.svg" alt="Timer">
@@ -51,19 +51,21 @@
                 <!-- Desaparecerá al cabo de unos segundos. -->
                 <p class="all-levels-timer__text">Timer is deactivated. Click to activate</p>
                 <!-- Solo se mostrará cuando se active el temporizador. -->
-                <p class="all-levels-timer__countdown">1:00</p>
+                <p class="all-levels-timer__countdown hidden">1:00</p>
             </div>
-            <!-- Tarjetas. Tendrá un display grid. -->
-            <div class="all-levels__cards">
-                <!-- Reverso. Aquí irán los iconos minimalistas. -->
-                <div class="all-levels-cards__back">
-                    <!-- Anverso. Aquí irán las fotografías. -->
-                    <div class="all-levels-cards__front"></div>
+            <div class="container">
+                <!-- Tarjetas. Tendrá un display grid. -->
+                <div class="all-levels__cards">
+                    <!-- Reverso. Aquí irán los iconos minimalistas. -->
+                    <div class="all-levels-cards__back">
+                        <!-- Anverso. Aquí irán las fotografías. -->
+                        <div class="all-levels-cards__front"></div>
+                    </div>
                 </div>
             </div>
             <div class="all-levels__level-info level-info">
                 <p class="level-info__text">
-                    Lvl <span class="level-info__current-level"></span>
+                    Lvl <span class="level-info__current-level">1</span>
                 </p>
                 <!-- Un div en lugar de <progress> para poder personalizarla -->
                 <div class="level-info__progress-border">
@@ -77,11 +79,11 @@
             </div>
         </section>
         <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
-        <section class="between-levels">
+        <section class="between-levels between-levels--hide">
             <h1 class="between-levels__title">Nice!</h1>
             <p class="between-levels__text">You completed this level.</p>
             <!-- Este párrafo mantiene siempre el mismo texto. -->
-            <p class="between-levels__question">Now... what?</p>
+            <p class="between-levels__text">Now... what?</p>
             <div class="between-levels__buttons">
                 <button class="between-levels-buttons__button">Restart level</button>
                 <button class="between-levels-buttons__button between-levels-buttons__button--next">Next level</button>
