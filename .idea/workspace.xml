@@ -2,16 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/modules/_json-photos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_json-photos.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_json-photos.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/base/_base.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_progress-bar.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_progress-bar.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" afterDir="false" />
@@ -69,7 +70,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/img/level3" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
@@ -113,6 +114,9 @@
       <workItem from="1646493582991" duration="16944000" />
       <workItem from="1646569319163" duration="20941000" />
       <workItem from="1646593607027" duration="4484000" />
+      <workItem from="1646639442593" duration="40000" />
+      <workItem from="1646658796701" duration="143000" />
+      <workItem from="1646658961688" duration="9385000" />
     </task>
     <servers />
   </component>

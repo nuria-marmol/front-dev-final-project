@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Pantalla de inicio del juego. En un primer momento solo se verá el header; lo demás estará oculto. Iremos mostrando la sección que toque. -->
-    <header class="game-menu hidden">
+    <header class="game-menu" style="display:none">
         <div class="game-menu__intro">
             <img class="game-menu-intro__image" src="assets/img/game-title.png" alt="Brain made with simple white lines">
         </div>
@@ -84,7 +84,7 @@
             <p class="between-levels__question">Now... what?</p>
             <div class="between-levels__buttons">
                 <button class="between-levels-buttons__button">Restart level</button>
-                <button class="between-levels-buttons__button">Next level</button>
+                <button class="between-levels-buttons__button between-levels-buttons__button--next">Next level</button>
             </div>
             <div class="between-levels__level-info level-info">
                 <p class="level-info__text">
@@ -95,13 +95,14 @@
                 </div>
             </div>
             <!-- Este botón solo se verá al completar el último nivel. -->
-            <div class="between-levels__share">
+            <div class="between-levels__share hidden">
                 <button class="between-levels-share__button">
                     Share game <img class="between-levels-share__image" src="assets/img/icons/share.svg" alt="Share">
                 </button>
             </div>
         </section>
     </main>
+    <!-- Se mostrará al completar el tercer nivel. -->
     <footer class="footer hidden">
         <p class="footer__text">Icons from The Noun Project</p>
         <p class="footer__text">Photos and code by Nuria Mármol</p>
