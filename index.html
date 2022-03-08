@@ -55,13 +55,7 @@
             </div>
             <div class="container">
                 <!-- Tarjetas. Tendrá un display grid. -->
-                <div class="all-levels__cards">
-                    <!-- Reverso. Aquí irán los iconos minimalistas. -->
-                    <div class="all-levels-cards__back">
-                        <!-- Anverso. Aquí irán las fotografías. -->
-                        <div class="all-levels-cards__front"></div>
-                    </div>
-                </div>
+                <div id="template-target" class="all-levels__cards"></div>
             </div>
             <div class="all-levels__level-info level-info">
                 <p class="level-info__text">
@@ -109,9 +103,16 @@
         <p class="footer__text">Icons from The Noun Project</p>
         <p class="footer__text">Photos and code by Nuria Mármol</p>
     </footer>
-    <!-- Plantilla para las fotografías (que tendrán la clase .all-levels-cards-front__image) y los iconos del reverso de las tarjetas (.all-levels-cards-back__image). -->
-    <template>
-        <img src="" alt="">
+    <!-- Plantilla para las fotografías y los iconos del reverso de las tarjetas -->
+    <template id="cards-template">
+        <!-- Reverso. Aquí irán los iconos minimalistas. -->
+        <div class="all-levels-cards__back">
+            <img id="cards-back" class="all-levels-cards-back__image" src="" alt="">
+            <!-- Anverso. Aquí irán las fotografías. -->
+            <div class="all-levels-cards__front">
+                <img id="cards-front" class="all-levels-cards-front__image" src="" alt="">
+            </div>
+        </div>
     </template>
 </body>
 </html>

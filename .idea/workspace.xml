@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="">
+    <list default="true" id="33c5f48b-273d-4fc1-bf7b-1479689e3d1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/modules/_json-images.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_json-photos.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_json-photos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_json-photos.js" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" afterDir="false" />
@@ -14,6 +15,7 @@
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_progress-bar.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_progress-bar.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_grid.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_grid.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" afterDir="false" />
@@ -22,12 +24,10 @@
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/vendors/_normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/vendors/_normalize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mobile.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,109 +35,37 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="HTML File" />
-        <option value="CSS File" />
-        <option value="Sass File" />
-        <option value="JavaScript File" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25Z7mlAhvS343zmyAMhvMcYqKFf" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="2" id="Add" />
-  </component>
+  <component name="ProjectId" id="2676m29AD3TZWikRb089h6ncwm3" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
-    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="list.type.of.created.stylesheet" value="Sass" />
     <property name="vue.rearranger.settings.migration" value="true" />
-  </component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\level3" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\level2" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img\level1-pics" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\img" />
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\sass\main\vendors" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\numar\Desktop\modulo-front\front-dev-final-project\assets\js\modules" />
-    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0ac844a0-b848-429c-a02d-38e6290da79f" name="Changes" comment="" />
-      <created>1645722920938</created>
+      <changelist id="33c5f48b-273d-4fc1-bf7b-1479689e3d1a" name="Changes" comment="" />
+      <created>1646762440046</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645722920938</updated>
-      <workItem from="1645722922579" duration="7725000" />
-      <workItem from="1645779573734" duration="581000" />
-      <workItem from="1645781962694" duration="2378000" />
-      <workItem from="1645792548636" duration="8772000" />
-      <workItem from="1645808003190" duration="1548000" />
-      <workItem from="1646034877247" duration="297000" />
-      <workItem from="1646055971795" duration="34000" />
-      <workItem from="1646056067643" duration="25000" />
-      <workItem from="1646056103729" duration="61000" />
-      <workItem from="1646056183625" duration="33000" />
-      <workItem from="1646056221894" duration="31000" />
-      <workItem from="1646056272507" duration="5114000" />
-      <workItem from="1646073593918" duration="5000" />
-      <workItem from="1646246695917" duration="698000" />
-      <workItem from="1646293759052" duration="14000" />
-      <workItem from="1646382717259" duration="4965000" />
-      <workItem from="1646394242408" duration="13303000" />
-      <workItem from="1646493582991" duration="16944000" />
-      <workItem from="1646569319163" duration="20941000" />
-      <workItem from="1646593607027" duration="4484000" />
-      <workItem from="1646639442593" duration="40000" />
-      <workItem from="1646658796701" duration="143000" />
-      <workItem from="1646658961688" duration="20933000" />
+      <updated>1646762440046</updated>
+      <workItem from="1646762444090" duration="9051000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

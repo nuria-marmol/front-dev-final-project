@@ -17,3 +17,8 @@
   background:
     image: url($url)
     position: $position
+
+@mixin grid-columns-rows($columns, $rows)
+  display: grid
+  grid-template-columns: $columns
+  grid-template-rows: $rows
