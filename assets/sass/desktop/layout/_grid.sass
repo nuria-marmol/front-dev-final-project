@@ -1,22 +1,30 @@
 .all-levels
-  @include flex-center(0)
+  &__cards
+    @include grid-columns-rows(repeat(5, 1fr), repeat(2, 1fr))
+    grid-column-gap: 1rem
+    grid-row-gap: 1.5rem
+  &-cards__back
+    background-color: $black-colour
+    @include white-border
+    /* Para que luego rote también su hijo, el div con la foto */
+    transform-style: preserve-3d
+    transition: 1s
+  &-cards-back__image
+    position: absolute
+    left: 50%
+    top: 50%
+    margin-left: -10%
+    margin-top: -10%
+    width: 20%
+  &-cards__front
+    width: 100%
+    height: 100%
+    transform: rotateY(180deg)
+    /* Para que no se sigan viendo giradas */
+    backface-visibility: hidden
+  &-cards-front__image
+    border-radius: 1rem
 
-.all-levels__cards
-  @include grid-columns-rows(repeat(5, 1fr), repeat(2, 1fr))
-  grid-column-gap: 1rem
-  grid-row-gap: 1.5rem
-
-.all-levels-cards__back
-  background-color: $black-colour
-  @include white-border
-
-.all-levels-cards-back__image
-  position: absolute
-  width: 3rem
-
-.all-levels-cards__front
-  width: 100%
-  height: 100%
-
-.all-levels-cards-front__image
-  border-radius: 1rem
+/* Añadir esta clase para girar la tarjeta */
+.all-levels-cards__back--turn
+  transform: rotateY(-180deg)

@@ -11,6 +11,9 @@ const level3Pairs = level3Pics.concat(level3Pics);
 const cardsTemplate = document.querySelector("#cards-template").content.firstElementChild;
 const templateTarget = document.querySelector("#template-target");
 
+// Capturamos las secciones
+const levelsSection = document.querySelector("#all-levels");
+
 // Funciones
 function shufflePics(arrayPairs) {
     arrayPairs.sort(function() {
@@ -28,9 +31,36 @@ function renderLevel(arrayPairs) {
         // Capturamos dentro de ella
         const cardsBack = templateCopy.querySelector("#cards-back");
         const cardsFront = templateCopy.querySelector("#cards-front");
-        // Rellenamos
+        // Rellenamos con las fotos del nivel que toque
         cardsFront.setAttribute("src", object.name);
         cardsFront.setAttribute("alt", object.description);
+
+        // Rellenamos con el icono que corresponda para la cara de atrás
+        /* Si el array que estamos iterando es el del primer nivel */
+        if (arrayPairs == level1Pairs) {
+            // Añadimos el icono de la luna al reverso, que está en la primera posición del JSON
+            cardsBack.setAttribute("src", allLevelsIcons[0].name);
+            cardsBack.setAttribute("alt", allLevelsIcons[0].description);
+        // Si el array iterado es el del segundo nivel
+        } else if (arrayPairs == level2Pairs) {
+            // Añadimos el icono del laberinto (segunda posición del JSON)
+            cardsBack.setAttribute("src", allLevelsIcons[1].name);
+            cardsBack.setAttribute("alt", allLevelsIcons[1].description);
+            // Cambiamos el color de fondo
+            levelsSection.classList.add("all-levels--first-change");
+            // Grid ...
+
+        // Si es el del tercer nivel
+        } else {
+            // Añadimos el icono de la flor (tercera posición)
+            cardsBack.setAttribute("src", allLevelsIcons[2].name);
+            cardsBack.setAttribute("alt", allLevelsIcons[2].description);
+            // Volvemos a cambiar el color de fondo
+            levelsSection.classList.add("all-levels--second-change");
+            // Grid ...
+
+        }
+
         // Movemos la plantilla a su destino
         templateTarget.appendChild(templateCopy);
     })

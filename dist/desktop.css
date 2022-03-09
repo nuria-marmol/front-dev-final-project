@@ -577,19 +577,6 @@ h1 {
   display: none;
 }
 
-.all-levels {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 0;
-}
-
 .all-levels__cards {
   display: -ms-grid;
   display: grid;
@@ -650,25 +637,41 @@ h1 {
   -ms-grid-row: 3;
   -ms-grid-column: 9;
 }
-
 .all-levels-cards__back {
   background-color: #000;
   border: 2px solid #fff;
   border-radius: 1rem;
+  /* Para que luego rote también su hijo, el div con la foto */
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
-
 .all-levels-cards-back__image {
   position: absolute;
-  width: 3rem;
+  left: 50%;
+  top: 50%;
+  margin-left: -10%;
+  margin-top: -10%;
+  width: 20%;
 }
-
 .all-levels-cards__front {
   width: 100%;
   height: 100%;
+  -webkit-transform: rotateY(180deg);
+          transform: rotateY(180deg);
+  /* Para que no se sigan viendo giradas */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
-
 .all-levels-cards-front__image {
   border-radius: 1rem;
+}
+
+/* Añadir esta clase para girar la tarjeta */
+.all-levels-cards__back--turn {
+  -webkit-transform: rotateY(-180deg);
+          transform: rotateY(-180deg);
 }
 
 /* Footer */
@@ -685,6 +688,16 @@ h1 {
 
 /* Levels section */
 .all-levels {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 0;
   background-color: #2C1B6F;
 }
 .all-levels-timer__text {

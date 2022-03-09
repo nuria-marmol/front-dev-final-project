@@ -1,4 +1,4 @@
-// 3 variables modificables con las fotografías para los 3 niveles de cartas
+// 3 arrays de objetos con las fotografías para los 3 niveles de cartas
 /* Tendremos que concatenar cada array con el mismo para tener las imágenes duplicadas. */
 export const level1Pics = [
     {
@@ -102,7 +102,7 @@ export const level3Pics = [
     }
 ]
 
-// Esta no la tendremos que concatenar
+// Este no lo tendremos que concatenar
 export const allLevelsIcons = [
     {
         name: "assets/img/icons/moon.svg",
