@@ -1,8 +1,3 @@
-@mixin container($width)
-  max-width: $width
-  margin: 0 auto
-  padding: 1rem
-
 @mixin text-nomargin($size)
   font-size: $size
   margin: 0
@@ -18,7 +13,8 @@
     image: url($url)
     position: $position
 
-@mixin grid-columns-rows($columns, $rows)
-  display: grid
+@mixin grid-cols-rows-cgap-rgap($columns, $rows, $gap-cols, $gap-rows)
   grid-template-columns: $columns
   grid-template-rows: $rows
+  grid-column-gap: $gap-cols
+  grid-row-gap: $gap-rows

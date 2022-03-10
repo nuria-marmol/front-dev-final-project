@@ -379,21 +379,17 @@ body {
 
 /* Para las tarjetas */
 .container {
-  max-width: 90%;
   margin: 0 auto;
+  max-width: 990px;
   padding: 1rem;
 }
 
 .container--2 {
   max-width: 700px;
-  margin: 0 auto;
-  padding: 1rem;
 }
 
 .container--3 {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 1rem;
+  max-width: 850px;
 }
 
 /* Lo usamos tanto en las pantallas de los niveles como en las pantallas intermedias */
@@ -661,17 +657,202 @@ h1 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   /* Para que no se sigan viendo giradas */
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
 }
 .all-levels-cards-front__image {
-  border-radius: 1rem;
+  border-radius: 0.8rem;
+  /* Para que funcione el object fit */
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 /* Añadir esta clase para girar la tarjeta */
 .all-levels-cards__back--turn {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+}
+
+/* Añadir estas dos clases para cambiar el grid */
+.all-levels__cards--grid2 {
+  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  -ms-grid-rows: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 3rem;
+  grid-row-gap: 0.5rem;
+}
+.all-levels__cards--grid2 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.all-levels__cards--grid2 > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.all-levels__cards--grid2 > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+.all-levels__cards--grid2 > *:nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(15) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+
+.all-levels__cards--grid3 {
+  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  -ms-grid-rows: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  grid-column-gap: 2rem;
+  grid-row-gap: 0.5rem;
+}
+
+.all-levels__cards--grid3 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+
+.all-levels__cards--grid3 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+
+.all-levels__cards--grid3 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+
+.all-levels__cards--grid3 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+
+.all-levels__cards--grid3 > *:nth-child(5) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+}
+
+.all-levels__cards--grid3 > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+
+.all-levels__cards--grid3 > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+
+.all-levels__cards--grid3 > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+
+.all-levels__cards--grid3 > *:nth-child(9) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+
+.all-levels__cards--grid3 > *:nth-child(10) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+}
+
+.all-levels__cards--grid3 > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+
+.all-levels__cards--grid3 > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+
+.all-levels__cards--grid3 > *:nth-child(13) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+
+.all-levels__cards--grid3 > *:nth-child(14) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+
+.all-levels__cards--grid3 > *:nth-child(15) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 9;
+}
+
+.all-levels__cards--grid3 > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+
+.all-levels__cards--grid3 > *:nth-child(17) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+
+.all-levels__cards--grid3 > *:nth-child(18) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+
+.all-levels__cards--grid3 > *:nth-child(19) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
+}
+
+.all-levels__cards--grid3 > *:nth-child(20) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 9;
 }
 
 /* Footer */
@@ -719,12 +900,17 @@ h1 {
   right: 4.4rem;
 }
 
+/* Añadir/quitar esta clase para ocultar/mostrar la sección */
+.all-levels--hide {
+  display: none;
+}
+
 /* Usar estas dos clases para cambiar el color de fondo del nivel */
-.all-levels--first-change {
+.all-levels--colour-change {
   background-color: #000;
 }
 
-.all-levels--second-change {
+.all-levels--another-colour-change {
   background-color: #996239;
 }
 
@@ -755,13 +941,13 @@ h1 {
   left: 1rem;
 }
 
+.between-levels-share__image {
+  width: 2rem;
+}
+
 /* Usar esta clase para ocultar/mostrar la sección entre niveles */
 .between-levels--hide {
   display: none;
-}
-
-.between-levels-share__image {
-  width: 2rem;
 }
 
 /* Añadir estas dos clases para cambiar la imagen de fondo */
