@@ -657,6 +657,8 @@ h1 {
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
   /* Para que no se sigan viendo giradas */
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
 }
 .all-levels-cards-front__image {
   border-radius: 0.8rem;
@@ -672,85 +674,29 @@ h1 {
           transform: rotateY(-180deg);
 }
 
+/* Añadir estas dos clases para cambiar el color de fondo del reverso */
+.all-levels-cards__back--colour-change {
+  background-color: #817676;
+}
+
+.all-levels-cards__back--another-colour-change {
+  background-color: #ffffcc;
+}
+
 /* Añadir estas dos clases para cambiar el grid */
 .all-levels__cards--grid2 {
-  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr;
+  -ms-grid-columns: (1fr)[4];
   grid-template-columns: repeat(4, 1fr);
-  -ms-grid-rows: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
-  grid-template-rows: repeat(4, 1fr);
-  grid-column-gap: 3rem;
-  grid-row-gap: 0.5rem;
-}
-.all-levels__cards--grid2 > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-.all-levels__cards--grid2 > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-.all-levels__cards--grid2 > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-.all-levels__cards--grid2 > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-.all-levels__cards--grid2 > *:nth-child(5) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-.all-levels__cards--grid2 > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-.all-levels__cards--grid2 > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-.all-levels__cards--grid2 > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-}
-.all-levels__cards--grid2 > *:nth-child(9) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}
-.all-levels__cards--grid2 > *:nth-child(10) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-}
-.all-levels__cards--grid2 > *:nth-child(11) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
-}
-.all-levels__cards--grid2 > *:nth-child(12) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 7;
-}
-.all-levels__cards--grid2 > *:nth-child(13) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-}
-.all-levels__cards--grid2 > *:nth-child(14) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
-}
-.all-levels__cards--grid2 > *:nth-child(15) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
-}
-.all-levels__cards--grid2 > *:nth-child(16) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 7;
+  width: 65%;
+  margin: 0 auto;
+  padding: 1rem 0;
 }
 
 .all-levels__cards--grid3 {
-  -ms-grid-columns: 1fr 2rem 1fr 2rem 1fr 2rem 1fr 2rem 1fr;
-  grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
-  grid-template-rows: repeat(4, 1fr);
+  -ms-grid-columns: 9.5rem 2rem 9.5rem 2rem 9.5rem 2rem 9.5rem 2rem 9.5rem;
+  grid-template-columns: repeat(5, 9.5rem);
+  -ms-grid-rows: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem;
+  grid-template-rows: repeat(4, 6.5rem);
   grid-column-gap: 2rem;
   grid-row-gap: 0.5rem;
 }
@@ -912,6 +858,11 @@ h1 {
 
 .all-levels--another-colour-change {
   background-color: #996239;
+}
+
+/* Añadir esta clase para ocultar el botón en el tercer nivel */
+.all-levels--next__button--hide {
+  display: none;
 }
 
 /* Between levels section */

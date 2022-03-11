@@ -24,13 +24,13 @@
 </head>
 <body>
     <!-- Pantalla de inicio del juego. En un primer momento solo se verá el header; lo demás estará oculto. Iremos mostrando la sección que toque. -->
-    <header class="game-menu game-menu--hide">
+    <header class="game-menu" id="game-menu">
         <div class="game-menu__intro">
             <img class="game-menu-intro__image" src="assets/img/game-title.png" alt="Brain made with simple white lines">
         </div>
         <!-- En "versión" móvil no tendríamos este div, ya que solo se va a poder jugar en versión escritorio. -->
         <div class="game-menu__start">
-            <button class="game-menu-start__button">
+            <button class="game-menu-start__button" id="play-button">
                 Play <img class="game-menu-start__image" src="assets/img/icons/play.svg" alt="Play button">
             </button>
         </div>
@@ -41,7 +41,7 @@
             <p class="game-menu-warning__text">Please come back when you're ready to play on your computer or tablet.</p>
         </div>
     </header>
-    <main class="main">
+    <main class="main hidden" id="main">
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
         <section class="all-levels" id="all-levels">
             <div class="all-levels__timer">
@@ -67,13 +67,13 @@
                 </div>
             </div>
             <div class="all-levels__next">
-                <button class="all-levels-next__button">
+                <button class="all-levels-next__button" id="all-levels-next__button">
                     Skip level <img class="all-levels-next__image" src="assets/img/icons/arrows.svg" alt="Rightwards arrow">
                 </button>
             </div>
         </section>
         <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
-        <section class="between-levels between-levels--hide">
+        <section class="between-levels between-levels--hide" id="between-levels">
             <h1 class="between-levels__title">Nice!</h1>
             <p class="between-levels__text">You completed this level.</p>
             <!-- Este párrafo mantiene siempre el mismo texto. -->
