@@ -119,18 +119,53 @@ function startGame() {
     main.classList.remove("hidden");
     // Del main, mostramos solo la sección de los niveles
     levelsSection.classList.remove("all-levels--hide");
+    flipCard();
 }
 
 /**
  * Salta al siguiente nivel
  */
 function skipLevel() {
-    if (currentLevel[0].textContent == "1") {
+    if (currentLevel[0].textContent === "1") {
         renderLevel(level2Pairs);
+        flipCard();
     } else if (currentLevel[0].textContent === "2") {
         renderLevel(level3Pairs);
+        flipCard();
     }
 }
+
+function flipCard() {
+    const allCards = document.querySelectorAll(".all-levels-cards__back");
+    allCards.forEach(function(card) {
+        card.addEventListener("click", function() {
+            card.classList.add("all-levels-cards__back--turn");
+            const chosenCards = document.querySelectorAll(".all-levels-cards__back--turn:not(.all-levels-cards__back--hidden)");
+            const chosenPics = document.querySelectorAll(".all-levels-cards__back--turn:not(.all-levels-cards__back--hidden) .all-levels-cards__front .all-levels-cards-front__image");
+            if (chosenCards.length === 2) {
+                if (chosenPics[0].getAttribute("alt") === chosenPics[1].getAttribute("alt")) {
+                    setTimeout(function() {
+                        chosenPics.forEach(function(card) {
+                            card.classList.add("all-levels-cards-front__image--opacity");
+                        })
+                        chosenCards.forEach(function(card) {
+                            card.classList.add("all-levels-cards__back--hidden");
+                        })
+                    }, 2000)
+                } else {
+                    setTimeout(function() {
+                        chosenCards.forEach(function(card) {
+                            card.classList.remove("all-levels-cards__back--turn");
+                        })
+                    }, 2000)
+                }
+            }
+        })
+    })
+}
+
+renderLevel(level1Pairs);
+flipCard();
 
 // --- Eventos ---
 playButton.addEventListener("click", startGame);

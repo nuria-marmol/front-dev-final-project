@@ -13,8 +13,8 @@
     image: url($url)
     position: $position
 
-@mixin grid-cols-rows-cgap-rgap($columns, $rows, $gap-cols, $gap-rows)
+@mixin grid-cols-gap-width($columns, $gap-cols, $gap-rows, $width)
   grid-template-columns: $columns
-  grid-template-rows: $rows
   grid-column-gap: $gap-cols
   grid-row-gap: $gap-rows
+  width: $width

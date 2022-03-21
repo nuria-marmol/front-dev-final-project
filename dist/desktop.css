@@ -578,60 +578,10 @@ h1 {
   display: grid;
   -ms-grid-columns: 1fr 1rem 1fr 1rem 1fr 1rem 1fr 1rem 1fr;
   grid-template-columns: repeat(5, 1fr);
-  -ms-grid-rows: 1fr 1.5rem 1fr;
-  grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 1rem;
   grid-row-gap: 1.5rem;
-}
-
-.all-levels__cards > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.all-levels__cards > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.all-levels__cards > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.all-levels__cards > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-
-.all-levels__cards > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 9;
-}
-
-.all-levels__cards > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.all-levels__cards > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.all-levels__cards > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
-.all-levels__cards > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-}
-
-.all-levels__cards > *:nth-child(10) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 9;
+  width: 90%;
+  margin: 0 auto;
 }
 .all-levels-cards__back {
   background-color: #000;
@@ -662,16 +612,30 @@ h1 {
 }
 .all-levels-cards-front__image {
   border-radius: 0.8rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   /* Para que funcione el object fit */
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /* Añadir esta clase para girar la tarjeta */
 .all-levels-cards__back--turn {
   -webkit-transform: rotateY(-180deg);
           transform: rotateY(-180deg);
+}
+
+/* Añadir estas clases para ocultar las tarjetas emparejadas */
+.all-levels-cards__back--hidden {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.all-levels-cards-front__image--opacity {
+  opacity: 0;
 }
 
 /* Añadir estas dos clases para cambiar el color de fondo del reverso */
@@ -685,120 +649,86 @@ h1 {
 
 /* Añadir estas dos clases para cambiar el grid */
 .all-levels__cards--grid2 {
-  -ms-grid-columns: (1fr)[4];
+  -ms-grid-columns: 1fr 3rem 1fr 3rem 1fr 3rem 1fr;
   grid-template-columns: repeat(4, 1fr);
-  width: 65%;
-  margin: 0 auto;
-  padding: 1rem 0;
+  grid-column-gap: 3rem;
+  grid-row-gap: 0.5rem;
+  width: 66%;
+  /* En este caso necesitamos definir también las filas para que todas tengan la misma anchura */
+  -ms-grid-rows: 1fr 0.5rem 1fr 0.5rem 1fr 0.5rem 1fr;
+  grid-template-rows: repeat(4, 1fr);
+}
+.all-levels__cards--grid2 > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(2) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(3) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(4) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+}
+.all-levels__cards--grid2 > *:nth-child(5) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(6) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(7) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(8) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+}
+.all-levels__cards--grid2 > *:nth-child(9) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(10) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(11) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(12) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 7;
+}
+.all-levels__cards--grid2 > *:nth-child(13) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 1;
+}
+.all-levels__cards--grid2 > *:nth-child(14) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 3;
+}
+.all-levels__cards--grid2 > *:nth-child(15) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 5;
+}
+.all-levels__cards--grid2 > *:nth-child(16) {
+  -ms-grid-row: 7;
+  -ms-grid-column: 7;
 }
 
 .all-levels__cards--grid3 {
-  -ms-grid-columns: 9.5rem 2rem 9.5rem 2rem 9.5rem 2rem 9.5rem 2rem 9.5rem;
-  grid-template-columns: repeat(5, 9.5rem);
-  -ms-grid-rows: 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem 0.5rem 6.5rem;
-  grid-template-rows: repeat(4, 6.5rem);
-  grid-column-gap: 2rem;
-  grid-row-gap: 0.5rem;
-}
-
-.all-levels__cards--grid3 > *:nth-child(1) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-}
-
-.all-levels__cards--grid3 > *:nth-child(2) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 3;
-}
-
-.all-levels__cards--grid3 > *:nth-child(3) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
-}
-
-.all-levels__cards--grid3 > *:nth-child(4) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 7;
-}
-
-.all-levels__cards--grid3 > *:nth-child(5) {
-  -ms-grid-row: 1;
-  -ms-grid-column: 9;
-}
-
-.all-levels__cards--grid3 > *:nth-child(6) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-}
-
-.all-levels__cards--grid3 > *:nth-child(7) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
-}
-
-.all-levels__cards--grid3 > *:nth-child(8) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
-}
-
-.all-levels__cards--grid3 > *:nth-child(9) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 7;
-}
-
-.all-levels__cards--grid3 > *:nth-child(10) {
-  -ms-grid-row: 3;
-  -ms-grid-column: 9;
-}
-
-.all-levels__cards--grid3 > *:nth-child(11) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-}
-
-.all-levels__cards--grid3 > *:nth-child(12) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 3;
-}
-
-.all-levels__cards--grid3 > *:nth-child(13) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 5;
-}
-
-.all-levels__cards--grid3 > *:nth-child(14) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 7;
-}
-
-.all-levels__cards--grid3 > *:nth-child(15) {
-  -ms-grid-row: 5;
-  -ms-grid-column: 9;
-}
-
-.all-levels__cards--grid3 > *:nth-child(16) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 1;
-}
-
-.all-levels__cards--grid3 > *:nth-child(17) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 3;
-}
-
-.all-levels__cards--grid3 > *:nth-child(18) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 5;
-}
-
-.all-levels__cards--grid3 > *:nth-child(19) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 7;
-}
-
-.all-levels__cards--grid3 > *:nth-child(20) {
-  -ms-grid-row: 7;
-  -ms-grid-column: 9;
+  -ms-grid-columns: 1fr 1.6rem 1fr 1.6rem 1fr 1.6rem 1fr 1.6rem 1fr;
+  grid-template-columns: repeat(5, 1fr);
+  grid-column-gap: 1.6rem;
+  grid-row-gap: 0.8rem;
+  width: 80%;
 }
 
 /* Footer */
