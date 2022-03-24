@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c5f48b-273d-4fc1-bf7b-1479689e3d1a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/front-dev-final-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/front-dev-final-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
@@ -28,13 +29,19 @@
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -68,11 +75,24 @@
       <workItem from="1646898884145" duration="10000" />
       <workItem from="1646913571805" duration="24839000" />
       <workItem from="1646999312773" duration="6205000" />
-      <workItem from="1647860461821" duration="23535000" />
+      <workItem from="1647860461821" duration="24842000" />
+      <workItem from="1647967649258" duration="22000" />
+      <workItem from="1648109009703" duration="9363000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

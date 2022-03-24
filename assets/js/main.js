@@ -1,6 +1,7 @@
 // ------ Importaciones ------
 /* Importamos JSONs con las fotografías. También los iconos para el reverso de las tarjetas */
 import { level1Pics, level2Pics, level3Pics, allLevelsIcons } from "./modules/_json-images.js";
+import { shufflePics, setLevelIcons } from "./modules/_small-functions.js";
 
 // ------ Variables ------
 /* Concatenamos cada array de fotografías para tenerlas duplicadas */
@@ -25,17 +26,17 @@ const skipButton = document.querySelector("#all-levels-next__button");
 
 // ------ Funciones ------
 /**
- * Redistribuye las fotografías
- *
- * @param {array} arrayPairs El array de objetos a reordenar
- * @returns {array} El mismo array, ya ordenado de nuevo
+ * Inicia el juego
  */
-function shufflePics(arrayPairs) {
-    arrayPairs.sort(function() {
-        // Partimos de la posición del medio. Irá distribuyendo adelante o atrás
-        return 0.5 - Math.random();
-    })
-    return arrayPairs;
+function startGame() {
+    renderLevel(level1Pairs);
+    // Ocultamos la pantalla de inicio
+    gameMenu.classList.add("game-menu--hide");
+    // Mostramos el main
+    main.classList.remove("hidden");
+    // Del main, mostramos solo la sección de los niveles
+    levelsSection.classList.remove("all-levels--hide");
+    flipCard();
 }
 
 /**
@@ -62,11 +63,11 @@ function renderLevel(arrayPairs) {
         /* Si el array que estamos iterando es el del primer nivel */
         if (arrayPairs == level1Pairs) {
             // Añadimos el primer icono al reverso
-            setLevelIcons(cardsBack, 0)
+            setLevelIcons(cardsBack, allLevelsIcons, 0)
         // Si el array iterado es el del segundo nivel
         } else if (arrayPairs == level2Pairs) {
             // Añadimos el segundo icono
-            setLevelIcons(cardsBack, 1)
+            setLevelIcons(cardsBack, allLevelsIcons, 1)
             // Cambiamos el color de fondo
             levelsSection.classList.add("all-levels--colour-change");
             // Modificamos el grid
@@ -79,7 +80,7 @@ function renderLevel(arrayPairs) {
         // Si es el del tercer nivel
         } else {
             // Añadimos el tercer icono
-            setLevelIcons(cardsBack, 2)
+            setLevelIcons(cardsBack, allLevelsIcons, 2)
             // Volvemos a cambiar el color de fondo
             levelsSection.classList.add("all-levels--another-colour-change");
             // Modificamos el grid
@@ -97,64 +98,67 @@ function renderLevel(arrayPairs) {
 }
 
 /**
- * Establece los iconos del reverso de las tarjetas
- *
- * @param {HTMLElement} cards La <img> de la parte de atrás de la tarjeta
- * @param {number} position La posición dentro del array de iconos
- */
-function setLevelIcons(cards, position) {
-    // El array de iconos siempre será el mismo
-    cards.setAttribute("src", allLevelsIcons[position].name);
-    cards.setAttribute("alt", allLevelsIcons[position].description);
-}
-
-/**
- * Inicia el juego
- */
-function startGame() {
-    renderLevel(level1Pairs);
-    // Ocultamos la pantalla de inicio
-    gameMenu.classList.add("game-menu--hide");
-    // Mostramos el main
-    main.classList.remove("hidden");
-    // Del main, mostramos solo la sección de los niveles
-    levelsSection.classList.remove("all-levels--hide");
-    flipCard();
-}
-
-/**
  * Salta al siguiente nivel
  */
 function skipLevel() {
+    // Si el primer span, el de esta pantalla, indica que estamos en el nivel 1
     if (currentLevel[0].textContent === "1") {
+        // Cargamos el nivel 2 y llamamos a la función para poder darle la vuelta a las tarjetas
         renderLevel(level2Pairs);
         flipCard();
+    // Si el mismo span indica que estamos en el nivel 2
     } else if (currentLevel[0].textContent === "2") {
+        // Cargamos el 3 y llamamos a la función para poder girar las tarjetas
         renderLevel(level3Pairs);
         flipCard();
     }
 }
 
+/**
+ * Da la vuelta a dos tarjetas y comprueba si coinciden
+ */
 function flipCard() {
+    // Capturamos el reverso de todas las tarjetas
     const allCards = document.querySelectorAll(".all-levels-cards__back");
     allCards.forEach(function(card) {
+        // Con cada una, al hacer clic
         card.addEventListener("click", function() {
+            // Le añadimos la clase para girarla
             card.classList.add("all-levels-cards__back--turn");
+            // Capturamos las tarjetas que aún NO se han adivinado
             const chosenCards = document.querySelectorAll(".all-levels-cards__back--turn:not(.all-levels-cards__back--hidden)");
+            // Dentro de las que aún NO se han emparejado, capturamos el anverso
             const chosenPics = document.querySelectorAll(".all-levels-cards__back--turn:not(.all-levels-cards__back--hidden) .all-levels-cards__front .all-levels-cards-front__image");
+            // Cuando ya se han seleccionado dos tarjetas
             if (chosenCards.length === 2) {
+                // Si su descripción es la misma, es decir, si es la misma fotografía
                 if (chosenPics[0].getAttribute("alt") === chosenPics[1].getAttribute("alt")) {
                     setTimeout(function() {
                         chosenPics.forEach(function(card) {
+                            // A ambas les añadimos opacidad para que se fundan
                             card.classList.add("all-levels-cards-front__image--opacity");
                         })
+                        /* Capturamos las tarjetas que ya tienen opacidad (tiene que estar aquí para que capturen las 2 primeras) */
+                        const guessedCards = document.querySelectorAll(".all-levels-cards-front__image--opacity");
+                        console.log(guessedCards);
                         chosenCards.forEach(function(card) {
+                            // Ocultamos también las caras de atrás correspondientes
                             card.classList.add("all-levels-cards__back--hidden");
                         })
+                        // Si todas las tarjetas ya se han emparejado
+                        if (guessedCards.length == allCards.length) {
+                            setTimeout(function() {
+                                // Ocultamos la pantalla actual y mostramos los mensajes
+                                levelsSection.classList.add("all-levels--hide");
+                                betweenLevelsSection.classList.remove("between-levels--hide");
+                            }, 1000)
+                        }
                     }, 2000)
+                // Si las fotografías NO coinciden
                 } else {
                     setTimeout(function() {
                         chosenCards.forEach(function(card) {
+                            // Volvemos a girar ambas para que vuelvan a estar tapadas
                             card.classList.remove("all-levels-cards__back--turn");
                         })
                     }, 2000)
