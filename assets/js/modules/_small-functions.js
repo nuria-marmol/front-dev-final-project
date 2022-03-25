@@ -1,5 +1,15 @@
 // Array de JSONs con los tres iconos del reverso
-import { allLevelsIcons } from "./_json-images.js";
+import { allLevelsIcons } from "./_images-jsons.js";
+
+/**
+ * Duplica las imágenes de las tarjetas
+ *
+ * @param {array} array Las fotos a concatenar
+ * @returns {array} Las fotografías ya duplicadas
+ */
+export function obtainPairs(array) {
+    return array.concat(array);
+}
 
 /**
  * Redistribuye las fotografías
