@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
     <meta name="author" content="Nuria Mármol">
     <meta name="keywords" content="html, css, javascript, memory, game">
-    <meta name="description" content="Memory card game with photographies. Train your memory while having fun.">
+    <meta name="description" content="Memory card game with photographs. Train your memory while having fun.">
     <meta property="og:title" content="Memory game | Match the photos">
     <meta property="og:type" content="website">
     <!-- Añadir url de la web -->
@@ -43,7 +43,7 @@
     </header>
     <main class="main" id="main">
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
-        <section class="all-levels" id="all-levels">
+        <section class="all-levels all-levels--hide" id="all-levels">
             <div class="all-levels__timer">
                 <button class="all-levels-timer__button">
                     <img class="all-levels-timer__image" src="assets/img/icons/timer.svg" alt="Timer">
@@ -73,14 +73,14 @@
             </div>
         </section>
         <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
-        <section class="between-levels between-levels--hide" id="between-levels">
+        <section class="between-levels" id="between-levels">
             <h1 class="between-levels__title">Nice!</h1>
             <p class="between-levels__text">You completed this level.</p>
             <!-- Este párrafo mantiene siempre el mismo texto. -->
             <p class="between-levels__text">Now... what?</p>
             <div class="between-levels__buttons">
-                <button class="between-levels-buttons__button">Restart level</button>
-                <button class="between-levels-buttons__button between-levels-buttons__button--next">Next level</button>
+                <button class="between-levels-buttons__button" id="restart-level">Restart level</button>
+                <button class="between-levels-buttons__button between-levels-buttons__button--next" id="next-level">Next level</button>
             </div>
             <div class="between-levels__level-info level-info">
                 <p class="level-info__text">

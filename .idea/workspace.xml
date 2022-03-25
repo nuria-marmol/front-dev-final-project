@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c5f48b-273d-4fc1-bf7b-1479689e3d1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/front-dev-final-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/front-dev-final-project.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/modules/_json-images.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_json-images.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" afterDir="false" />
@@ -77,7 +77,9 @@
       <workItem from="1646999312773" duration="6205000" />
       <workItem from="1647860461821" duration="24842000" />
       <workItem from="1647967649258" duration="22000" />
-      <workItem from="1648109009703" duration="9363000" />
+      <workItem from="1648109009703" duration="9596000" />
+      <workItem from="1648124658667" duration="7109000" />
+      <workItem from="1648194934314" duration="11396000" />
     </task>
     <servers />
   </component>

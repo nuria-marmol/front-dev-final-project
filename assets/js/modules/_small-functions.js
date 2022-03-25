@@ -1,3 +1,6 @@
+// Array de JSONs con los tres iconos del reverso
+import { allLevelsIcons } from "./_json-images.js";
+
 /**
  * Redistribuye las fotografías
  *
@@ -16,11 +19,9 @@ export function shufflePics(arrayPairs) {
  * Establece los iconos del reverso de las tarjetas
  *
  * @param {HTMLElement} cards La <img> de la parte de atrás de la tarjeta
- * @param {array} icons El array de objetos donde están los iconos
  * @param {number} position La posición dentro del array de iconos
  */
-export function setLevelIcons(cards, icons, position) {
-    // El array de iconos siempre será el mismo
-    cards.setAttribute("src", icons[position].name);
-    cards.setAttribute("alt", icons[position].description);
+export function setLevelIcons(cards, position) {
+    cards.setAttribute("src", allLevelsIcons[position].name);
+    cards.setAttribute("alt", allLevelsIcons[position].description);
 }

@@ -1,6 +1,7 @@
 // ------ Importaciones ------
-/* Importamos JSONs con las fotografías. También los iconos para el reverso de las tarjetas */
-import { level1Pics, level2Pics, level3Pics, allLevelsIcons } from "./modules/_json-images.js";
+/* JSONs con las fotografías */
+import { level1Pics, level2Pics, level3Pics } from "./modules/_json-images.js";
+// Pequeñas funciones
 import { shufflePics, setLevelIcons } from "./modules/_small-functions.js";
 
 // ------ Variables ------
@@ -23,6 +24,8 @@ const currentLevel = document.querySelectorAll(".level-info__current-level");
 // Los botones
 const playButton = document.querySelector("#play-button");
 const skipButton = document.querySelector("#all-levels-next__button");
+const restartButton = document.querySelector("#restart-level");
+const nextButton = document.querySelector("#next-level");
 
 // ------ Funciones ------
 /**
@@ -63,24 +66,23 @@ function renderLevel(arrayPairs) {
         /* Si el array que estamos iterando es el del primer nivel */
         if (arrayPairs == level1Pairs) {
             // Añadimos el primer icono al reverso
-            setLevelIcons(cardsBack, allLevelsIcons, 0)
+            setLevelIcons(cardsBack, 0)
         // Si el array iterado es el del segundo nivel
         } else if (arrayPairs == level2Pairs) {
             // Añadimos el segundo icono
-            setLevelIcons(cardsBack, allLevelsIcons, 1)
+            setLevelIcons(cardsBack, 1)
             // Cambiamos el color de fondo
             levelsSection.classList.add("all-levels--colour-change");
             // Modificamos el grid
             templateTarget.classList.add("all-levels__cards--grid2");
             // Cambiamos el color de fondo del reverso de la tarjeta
             templateCopy.classList.add("all-levels-cards__back--colour-change");
-
             // El primer span del array mostrará un 2
             currentLevel[0].textContent = "2";
         // Si es el del tercer nivel
         } else {
             // Añadimos el tercer icono
-            setLevelIcons(cardsBack, allLevelsIcons, 2)
+            setLevelIcons(cardsBack, 2)
             // Volvemos a cambiar el color de fondo
             levelsSection.classList.add("all-levels--another-colour-change");
             // Modificamos el grid
@@ -140,7 +142,6 @@ function flipCard() {
                         })
                         /* Capturamos las tarjetas que ya tienen opacidad (tiene que estar aquí para que capturen las 2 primeras) */
                         const guessedCards = document.querySelectorAll(".all-levels-cards-front__image--opacity");
-                        console.log(guessedCards);
                         chosenCards.forEach(function(card) {
                             // Ocultamos también las caras de atrás correspondientes
                             card.classList.add("all-levels-cards__back--hidden");
@@ -153,7 +154,7 @@ function flipCard() {
                                 betweenLevelsSection.classList.remove("between-levels--hide");
                             }, 1000)
                         }
-                    }, 2000)
+                    }, 1500)
                 // Si las fotografías NO coinciden
                 } else {
                     setTimeout(function() {
@@ -161,11 +162,63 @@ function flipCard() {
                             // Volvemos a girar ambas para que vuelvan a estar tapadas
                             card.classList.remove("all-levels-cards__back--turn");
                         })
-                    }, 2000)
+                    }, 1500)
                 }
+            // Para que no se giren más de 2 tarjetas
+            } else if (chosenCards.length > 2) {
+                card.classList.remove("all-levels-cards__back--turn");
             }
         })
     })
+}
+
+function restartLevel() {
+    // Si el segundo span, el de esta pantalla, indica que estamos en el nivel 1
+    if (currentLevel[1].textContent === "1") {
+        // Ocultamos la sección actual (mensajes) y mostramos la que toca (nivel)
+        betweenLevelsSection.classList.add("between-levels--hide");
+        levelsSection.classList.remove("all-levels--hide");
+        // Cargamos de nuevo el nivel 1 y llamamos a la función para poder darle la vuelta a las tarjetas
+        renderLevel(level1Pairs);
+        flipCard();
+    // Si el mismo span indica que estamos en el nivel 2
+    } else if (currentLevel[1].textContent === "2") {
+        betweenLevelsSection.classList.add("between-levels--hide");
+        levelsSection.classList.remove("all-levels--hide");
+        // Cargamos el 2 otra vez y llamamos a la función para poder girar las tarjetas
+        renderLevel(level2Pairs);
+        flipCard();
+    } else if (currentLevel[1].textContent === "3") {
+        betweenLevelsSection.classList.add("between-levels--hide");
+        levelsSection.classList.remove("all-levels--hide");
+        // Cargamos el nivel 3
+        renderLevel(level3Pairs);
+        flipCard();
+    }
+}
+
+function nextLevel() {
+    // Si el segundo span, el de esta pantalla, indica que estamos en el nivel 1
+    if (currentLevel[1].textContent === "1") {
+        // Ocultamos la sección actual (mensajes) y mostramos la que toca (nivel)
+        betweenLevelsSection.classList.add("between-levels--hide");
+        levelsSection.classList.remove("all-levels--hide");
+        // Cargamos de nuevo el nivel 1 y llamamos a la función para poder darle la vuelta a las tarjetas
+        renderLevel(level2Pairs);
+        flipCard();
+        // Si el mismo span indica que estamos en el nivel 2
+    } else if (currentLevel[1].textContent === "2") {
+        betweenLevelsSection.classList.add("between-levels--hide");
+        levelsSection.classList.remove("all-levels--hide");
+        // Cargamos el 2 otra vez y llamamos a la función para poder girar las tarjetas
+        renderLevel(level3Pairs);
+        flipCard();
+    } else if (currentLevel[1].textContent === "3") {
+        betweenLevelsSection.classList.add("between-levels--hide");
+        levelsSection.classList.remove("all-levels--hide");
+        // Cargamos el nivel 3
+        renderLevel(level1Pairs);
+    }
 }
 
 renderLevel(level1Pairs);
@@ -174,3 +227,5 @@ flipCard();
 // --- Eventos ---
 playButton.addEventListener("click", startGame);
 skipButton.addEventListener("click", skipLevel);
+restartButton.addEventListener("click", restartLevel);
+nextButton.addEventListener("click", nextLevel);
