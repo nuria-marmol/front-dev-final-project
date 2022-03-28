@@ -1,3 +1,4 @@
+// Clases CSS para el render
 export const renderClasses = [
     {
         sectionColour: "all-levels--colour-change",

@@ -13,6 +13,7 @@ import { obtainPairs } from "./modules/_small-functions.js";
 const level1Pairs = obtainPairs(level1Pics);
 const level2Pairs = obtainPairs(level2Pics);
 const level3Pairs = obtainPairs(level3Pics);
+//window.level = 1;
 
 // Capturamos los elementos necesarios:
 /* Nuestra plantilla para las imágenes y su destino, el div que tiene el grid */
@@ -43,7 +44,7 @@ function startGame() {
     main.classList.remove("hidden");
     // Del main, mostramos solo la sección de los niveles
     levelsSection.classList.remove("all-levels--hide");
-    flipCard(levelsSection, betweenLevelsSection);
+    flipCard(levelsSection, betweenLevelsSection, nextButton, level1Pairs, level2Pairs);
 }
 
 /**
@@ -54,66 +55,50 @@ function skipLevel() {
     if (currentLevel[0].textContent === "1") {
         // Cargamos el nivel 2 y llamamos a la función para poder darle la vuelta a las tarjetas
         renderLevel(level2Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        flipCard(levelsSection, betweenLevelsSection, nextButton, level1Pairs, level2Pairs);
     // Si el mismo span indica que estamos en el nivel 2
     } else if (currentLevel[0].textContent === "2") {
         // Cargamos el 3 y llamamos a la función para poder girar las tarjetas
         renderLevel(level3Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        flipCard(levelsSection, betweenLevelsSection, nextButton, level1Pairs, level2Pairs);
     }
 }
 
 function restartLevel() {
     // Si el segundo span, el de esta pantalla, indica que estamos en el nivel 1
     if (currentLevel[1].textContent === "1") {
-        // Ocultamos la sección actual (mensajes) y mostramos la que toca (nivel)
-        betweenLevelsSection.classList.add("between-levels--hide");
-        levelsSection.classList.remove("all-levels--hide");
-        // Cargamos de nuevo el nivel 1 y llamamos a la función para poder darle la vuelta a las tarjetas
-        renderLevel(level1Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        hideMessagesShowLevel(level1Pairs);
     // Si el mismo span indica que estamos en el nivel 2
     } else if (currentLevel[1].textContent === "2") {
-        betweenLevelsSection.classList.add("between-levels--hide");
-        levelsSection.classList.remove("all-levels--hide");
-        // Cargamos el 2 otra vez y llamamos a la función para poder girar las tarjetas
-        renderLevel(level2Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        hideMessagesShowLevel(level2Pairs);
     } else if (currentLevel[1].textContent === "3") {
-        betweenLevelsSection.classList.add("between-levels--hide");
-        levelsSection.classList.remove("all-levels--hide");
-        // Cargamos el nivel 3
-        renderLevel(level3Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        hideMessagesShowLevel(level3Pairs);
     }
 }
 
 function nextLevel() {
     // Si el segundo span, el de esta pantalla, indica que estamos en el nivel 1
     if (currentLevel[1].textContent === "1") {
-        // Ocultamos la sección actual (mensajes) y mostramos la que toca (nivel)
-        betweenLevelsSection.classList.add("between-levels--hide");
-        levelsSection.classList.remove("all-levels--hide");
-        // Cargamos de nuevo el nivel 1 y llamamos a la función para poder darle la vuelta a las tarjetas
-        renderLevel(level2Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        hideMessagesShowLevel(level2Pairs);
         // Si el mismo span indica que estamos en el nivel 2
     } else if (currentLevel[1].textContent === "2") {
-        betweenLevelsSection.classList.add("between-levels--hide");
-        levelsSection.classList.remove("all-levels--hide");
-        // Cargamos el 2 otra vez y llamamos a la función para poder girar las tarjetas
-        renderLevel(level3Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-        flipCard(levelsSection, betweenLevelsSection);
+        hideMessagesShowLevel(level3Pairs);
     } else if (currentLevel[1].textContent === "3") {
-        betweenLevelsSection.classList.add("between-levels--hide");
-        levelsSection.classList.remove("all-levels--hide");
-        // Cargamos el nivel 3
-        renderLevel(level1Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
+        hideMessagesShowLevel(level1Pairs);
     }
 }
 
+function hideMessagesShowLevel(arrayPairs) {
+    // Ocultamos la sección actual (mensajes) y mostramos la que toca (nivel)
+    betweenLevelsSection.classList.add("between-levels--hide");
+    levelsSection.classList.remove("all-levels--hide");
+    // Cargamos el nivel que toque y llamamos a la función para poder darle la vuelta a las tarjetas
+    renderLevel(arrayPairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
+    flipCard(levelsSection, betweenLevelsSection, nextButton, level1Pairs, level2Pairs);
+}
+
 renderLevel(level1Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-flipCard(levelsSection, betweenLevelsSection);
+flipCard(levelsSection, betweenLevelsSection, nextButton, level1Pairs, level2Pairs);
 
 // --- Eventos ---
 playButton.addEventListener("click", startGame);

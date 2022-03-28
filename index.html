@@ -43,7 +43,7 @@
     </header>
     <main class="main" id="main">
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
-        <section class="all-levels all-levels--hide" id="all-levels">
+        <section class="all-levels" id="all-levels">
             <div class="all-levels__timer">
                 <button class="all-levels-timer__button">
                     <img class="all-levels-timer__image" src="assets/img/icons/timer.svg" alt="Timer">
@@ -62,8 +62,8 @@
                     Lvl <span class="level-info__current-level">1</span>
                 </p>
                 <!-- Un div en lugar de <progress> para poder personalizarla -->
-                <div class="level-info__progress-border">
-                    <div class="level-info__progress-fill"></div>
+                <div class="level-info__progress-border" id="progress-border">
+                    <div class="level-info__progress-fill" id="progress-fill"></div>
                 </div>
             </div>
             <div class="all-levels__next">
@@ -73,8 +73,8 @@
             </div>
         </section>
         <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
-        <section class="between-levels" id="between-levels">
-            <h1 class="between-levels__title">Nice!</h1>
+        <section class="between-levels between-levels--hide" id="between-levels">
+            <h1 class="between-levels__title" id="in-between-text">Nice!</h1>
             <p class="between-levels__text">You completed this level.</p>
             <!-- Este párrafo mantiene siempre el mismo texto. -->
             <p class="between-levels__text">Now... what?</p>

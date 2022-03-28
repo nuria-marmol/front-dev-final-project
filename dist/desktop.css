@@ -526,9 +526,11 @@ h1 {
 
 .level-info__progress-fill {
   height: 100%;
-  width: 1.7rem;
+  width: 0;
   background-color: #fff;
   border-radius: 1rem;
+  -webkit-transition: 1s;
+  transition: 1s;
 }
 
 /* Header */
@@ -635,7 +637,7 @@ h1 {
 }
 
 .all-levels-cards-front__image--opacity {
-  opacity: 0;
+  opacity: 0.6;
 }
 
 /* Añadir estas dos clases para cambiar el color de fondo del reverso */

@@ -8,7 +8,7 @@ import { renderClasses } from "./_classes.js";
  * @param {HTMLElement} template La plantilla que usaremos para generar las tarjetas
  * @param {HTMLElement} target El destino de nuestra plantilla
  * @param {HTMLElement} section La sección del nivel
- * @param {HTMLElement} spans Donde se muestra el nivel actual
+ * @param {NodeListOf} spans Donde se muestra el nivel actual
  * @param {HTMLElement} button Botón para saltar el nivel
  * @param {array} level1 Primer array de parejas de tarjetas
  * @param {array} level2 Segundo array de parejas
@@ -18,6 +18,8 @@ export function renderLevel(arrayPairs, template, target, section, spans, button
     const shuffledImages = shufflePics(arrayPairs);
     /* Vaciamos el contenido del destino de la plantilla para que no se vayan acumulando las tarjetas del nivel anterior */
     target.textContent = "";
+    // Limpiamos la barrita
+    document.querySelector("#progress-fill").style.width = "0";
     shuffledImages.forEach(function(object) {
         // Clonamos la plantilla
         const templateCopy = template.cloneNode(true);
@@ -43,7 +45,7 @@ export function renderLevel(arrayPairs, template, target, section, spans, button
  * @param {HTMLElement} target El destino de nuestra plantilla
  * @param {HTMLElement} section La sección del nivel
  * @param {HTMLElement} cardsBack Parte de detrás de las tarjetas
- * @param {HTMLElement} spans Donde se muestra el nivel actual
+ * @param {NodeListOf} spans Donde se muestra el nivel actual
  * @param {HTMLElement} button Botón para saltar el nivel
  * @param {array} level1 Primer array de parejas de tarjetas
  * @param {array} level2 Segundo array de parejas
@@ -54,13 +56,22 @@ function getIcons(arrayPairs, template, templateCopy, target, section, cardsBack
     if (arrayPairs === level1) {
         // Añadimos el primer icono al reverso
         setLevelIcons(cardsBack, 0)
-        // Si el array iterado es el del segundo nivel
+        spans.forEach(function(span) {
+            span.textContent = "1";
+        })
+        /* Eliminamos las clases que personalizaban el color de fondo del nivel 2 y 3 (por si una vez terminado el juego se quiere volver a empezar). */
+        section.classList.remove(renderClasses[0].sectionColour);
+        section.classList.remove(renderClasses[1].sectionColour);
+        // Quitamos también las clases que personalizaban el grid de los otros dos niveles
+        target.classList.remove(renderClasses[0].grid);
+        target.classList.remove(renderClasses[1].grid);
+    // Si el array iterado es el del segundo nivel
     } else if (arrayPairs === level2) {
         // Añadimos el segundo icono
         setLevelIcons(cardsBack, 1)
         // Cambiamos varios estilos para este nivel
         additionalLevelStyles(0, 2, section, target, templateCopy, spans)
-        // Si es el del tercer nivel
+    // Si es el del tercer nivel
     } else {
         // Añadimos el tercer icono
         setLevelIcons(cardsBack, 2)
@@ -78,7 +89,7 @@ function getIcons(arrayPairs, template, templateCopy, target, section, cardsBack
  * @param {HTMLElement} section La sección del nivel
  * @param {HTMLElement} target El destino de nuestra plantilla
  * @param {HTMLElement} templateCopy La copia de nuestra plantilla
- * @param {HTMLElement} spans Donde se muestra el nivel actual
+ * @param {NodeListOf} spans Donde se muestra el nivel actual
  */
 function additionalLevelStyles(position, text, section, target, templateCopy, spans) {
     // Cambiamos el color de fondo
@@ -88,5 +99,7 @@ function additionalLevelStyles(position, text, section, target, templateCopy, sp
     // Cambiamos el color de fondo del reverso de la tarjeta
     templateCopy.classList.add(renderClasses[position].backCardColour);
     // El primer span del array mostrará el nivel que corresponda
-    spans[0].textContent = text;
+    spans.forEach(function(span) {
+        span.textContent = `${text}`;
+    })
 }

@@ -1,10 +1,15 @@
+import { growProgressFill } from "./_custom-progress-bar.js";
+
 /**
  * Da la vuelta solo a dos tarjetas. Llama a la función de comprobar tarjetas
  *
  * @param {HTMLElement} currentSection La pantalla del nivel
  * @param {HTMLElement} messagesSection Pantalla intermedia
+ * @param {HTMLElement} button El botón para pasar al siguiente nivel
+ * @param {Array} level1 El array de objetos del primer nivel
+ * @param {Array} level2 El array del segundo nivel
  */
-export function flipCard(currentSection, messagesSection) {
+export function flipCard(currentSection, messagesSection, button, level1, level2) {
     // Capturamos el reverso de todas las tarjetas
     const allCards = document.querySelectorAll(".all-levels-cards__back");
     allCards.forEach(function(card) {
@@ -19,7 +24,7 @@ export function flipCard(currentSection, messagesSection) {
             // Cuando ya se han seleccionado dos tarjetas
             if (chosenCards.length === 2) {
                 // Comprobamos si son iguales
-                checkCards(chosenPics, chosenCards, allCards, currentSection, messagesSection);
+                checkCards(chosenPics, chosenCards, allCards, currentSection, messagesSection, button, level1, level2);
             // Para que no se giren más de 2 tarjetas
             } else if (chosenCards.length > 2) {
                 card.classList.remove("all-levels-cards__back--turn");
@@ -31,13 +36,16 @@ export function flipCard(currentSection, messagesSection) {
 /**
  * Verifica si las dos tarjetas que se han destapado son iguales
  *
- * @param {HTMLElement} chosenPics El anverso de las tarjetas que se han girado, pero aún no se han acertado
- * @param {HTMLElement} chosenCards El reverso de las tarjetas que se han girado, pero aún no se han acertado
- * @param {HTMLElement} allCards Todas las tarjetas, todavía sin girar
+ * @param {NodeListOf} chosenPics El anverso de las tarjetas que se han girado, pero aún no se han acertado
+ * @param {NodeListOf} chosenCards El reverso de las tarjetas que se han girado, pero aún no se han acertado
+ * @param {NodeListOf} allCards Todas las tarjetas, todavía sin girar
  * @param {HTMLElement} currentSection La pantalla del nivel
  * @param {HTMLElement} messagesSection Pantalla intermedia
+ * @param {HTMLElement} button El botón para pasar al siguiente nivel
+ * @param {Array} level1 El array de objetos del primer nivel
+ * @param {Array} level2 El array del segundo nivel
  */
-function checkCards(chosenPics, chosenCards, allCards, currentSection, messagesSection) {
+function checkCards(chosenPics, chosenCards, allCards, currentSection, messagesSection, button, level1, level2) {
     // Si su descripción es la misma, es decir, si es la misma fotografía
     if (chosenPics[0].getAttribute("alt") === chosenPics[1].getAttribute("alt")) {
         setTimeout(function() {
@@ -47,6 +55,7 @@ function checkCards(chosenPics, chosenCards, allCards, currentSection, messagesS
             })
             /* Capturamos las tarjetas que ya tienen opacidad (tiene que estar aquí para que capturen las 2 primeras) */
             const guessedCards = document.querySelectorAll(".all-levels-cards-front__image--opacity");
+            growProgressFill(allCards, guessedCards);
             chosenCards.forEach(function(card) {
                 // Ocultamos también las caras de atrás correspondientes
                 card.classList.add("all-levels-cards__back--hidden");
@@ -55,12 +64,13 @@ function checkCards(chosenPics, chosenCards, allCards, currentSection, messagesS
             if (guessedCards.length === allCards.length) {
                 setTimeout(function() {
                     // Ocultamos la pantalla actual y mostramos los mensajes
-                    currentSection.classList.add("all-levels--hide");
+                    changeBetweenLevelsTexts(button, guessedCards, level1, level2);
                     messagesSection.classList.remove("between-levels--hide");
-                }, 1000)
+                    currentSection.classList.add("all-levels--hide");
+                }, 1200)
             }
         }, 1500)
-        // Si las fotografías NO coinciden
+    // Si las fotografías NO coinciden
     } else {
         setTimeout(function() {
             chosenCards.forEach(function(card) {
@@ -68,5 +78,17 @@ function checkCards(chosenPics, chosenCards, allCards, currentSection, messagesS
                 card.classList.remove("all-levels-cards__back--turn");
             })
         }, 1500)
+    }
+}
+
+function changeBetweenLevelsTexts(button, guessedCards, level1, level2) {
+    const text = document.querySelector("#in-between-text");
+    if (guessedCards.length === level1.length) {
+        text.textContent = "Nice!";
+    } else if (guessedCards.length === level2.length) {
+        text.textContent = "Great!";
+    } else {
+        text.textContent = "Impressive!";
+        button.textContent = "Play again";
     }
 }
