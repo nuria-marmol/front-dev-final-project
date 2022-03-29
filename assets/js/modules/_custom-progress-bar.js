@@ -5,13 +5,12 @@
  * @param {NodeListOf} guessedCards Las tarjetas ya acertadas
  */
 export function growProgressFill(allCards, guessedCards) {
-    // Capturamos los 2 divs que son el relleno de la barra
+    // Capturamos los 2 divs (el relleno de la barra)
     const progressFill = document.querySelectorAll(".level-info__progress-fill");
     // Guardamos el ancho que irá aumentando la barrita cada vez que el jugador acierte
     const progressFillWidthPerPair = getProgressPerPair(allCards);
-    /* El relleno del primer div será igual al ancho del relleno actual (en rem y solo con un decimal) más la anchura que le corresponda aumentar */
-    console.log((progressFill[0].clientWidth / 16 + progressFillWidthPerPair).toFixed(1));
-    progressFill[0].style.width = `${(progressFill[0].clientWidth / 16 + progressFillWidthPerPair).toFixed(2)}rem`;
+    /* El relleno del primer div será igual al ancho del relleno actual (en rem y solo con un decimal) + la anchura que le corresponda aumentar */
+    progressFill[0].style.width = `${(progressFill[0].clientWidth / 16 + progressFillWidthPerPair).toFixed(1)}rem`;
     /* Para que al crecer la barra por última vez se ajuste perfectamente al borde.
     Si solo faltan 2 tarjetas por emparejar */
     if (guessedCards.length - 2 === allCards.length - 2) {

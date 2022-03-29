@@ -1,4 +1,6 @@
+// Pequeñas funciones
 import { setLevelIcons, shufflePics } from "./_small-functions.js";
+// Clases CSS
 import { renderClasses } from "./_classes.js";
 
 /**
@@ -65,6 +67,8 @@ function getIcons(arrayPairs, template, templateCopy, target, section, cardsBack
         // Quitamos también las clases que personalizaban el grid de los otros dos niveles
         target.classList.remove(renderClasses[0].grid);
         target.classList.remove(renderClasses[1].grid);
+        // Mostramos de nuevo el botón para saltar el nivel
+        button.classList.remove("all-levels--next__button--hide");
     // Si el array iterado es el del segundo nivel
     } else if (arrayPairs === level2) {
         // Añadimos el segundo icono

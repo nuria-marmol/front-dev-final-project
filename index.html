@@ -24,7 +24,7 @@
 </head>
 <body>
     <!-- Pantalla de inicio del juego. En un primer momento solo se verá el header; lo demás estará oculto. Iremos mostrando la sección que toque. -->
-    <header class="game-menu game-menu--hide" id="game-menu">
+    <header class="game-menu" id="game-menu">
         <div class="game-menu__intro">
             <img class="game-menu-intro__image" src="assets/img/game-title.png" alt="Brain made with simple white lines">
         </div>
@@ -41,9 +41,9 @@
             <p class="game-menu-warning__text">Please come back when you're ready to play on your computer or tablet.</p>
         </div>
     </header>
-    <main class="main" id="main">
+    <main class="main hidden" id="main">
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
-        <section class="all-levels" id="all-levels">
+        <section class="all-levels all-levels--hide" id="all-levels">
             <div class="all-levels__timer">
                 <button class="all-levels-timer__button">
                     <img class="all-levels-timer__image" src="assets/img/icons/timer.svg" alt="Timer">
@@ -91,7 +91,7 @@
                 </div>
             </div>
             <!-- Este botón solo se verá al completar el último nivel. -->
-            <div class="between-levels__share hidden">
+            <div class="between-levels__share hidden" id="share-button">
                 <button class="between-levels-share__button">
                     Share game <img class="between-levels-share__image" src="assets/img/icons/share.svg" alt="Share">
                 </button>
@@ -99,7 +99,7 @@
         </section>
     </main>
     <!-- Se mostrará al completar el tercer nivel. -->
-    <footer class="footer hidden">
+    <footer class="footer hidden" id="footer">
         <p class="footer__text">Icons from The Noun Project</p>
         <p class="footer__text">Photos and code by Nuria Mármol</p>
     </footer>

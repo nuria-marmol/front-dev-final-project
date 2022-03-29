@@ -5,11 +5,11 @@ export const level1Pics = [
         // Ruta pensando en que tendrá que llegar a ellas desde index.html
         name: "assets/img/level1/ferris-wheel.jpg",
         description: "Ferris wheel"
-    },
+    }/*,
     {
         name: "assets/img/level1/harbour.jpg",
         description: "Harbour at night"
-    }/*,
+    },
     {
         name: "assets/img/level1/psychedelic.jpg",
         description: "Psychedelic lights on a path"
@@ -28,11 +28,11 @@ export const level2Pics= [
     {
         name: "assets/img/level2/bridge.jpg",
         description: "Bridge"
-    },
+    }/*,
     {
         name: "assets/img/level2/church.jpg",
         description: "Church"
-    }/*,
+    },
     {
         name: "assets/img/level2/deer.jpg",
         description: "Colorfull graffiti of a deer"
@@ -63,11 +63,11 @@ export const level3Pics = [
     {
         name: "assets/img/level3/bellflowers.jpg",
         description: "Purple bellflowers"
-    },
+    }/*,
     {
         name: "assets/img/level3/branches.jpg",
         description: "Branches from a tree"
-    }/*,
+    },
     {
         name: "assets/img/level3/daisies.jpg",
         description: "Yellow daisies"

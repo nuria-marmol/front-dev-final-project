@@ -828,6 +828,14 @@ h1 {
   width: 2rem;
 }
 
+/* Añadir esta clase al mensaje que creamos al copiar url */
+.between-levels-share__copy-link-message {
+  position: absolute;
+  top: 1.5rem;
+  left: 14.7rem;
+  color: #fff;
+}
+
 /* Usar esta clase para ocultar/mostrar la sección entre niveles */
 .between-levels--hide {
   display: none;
