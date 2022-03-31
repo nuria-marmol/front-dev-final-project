@@ -2,7 +2,7 @@
 /* JSONs con las fotografías */
 import { level1Pics, level2Pics, level3Pics } from "./modules/_images-jsons.js";
 // Cargar las tarjetas
-import { renderLevel } from "./modules/_render.js";
+import { renderLevel } from "./modules/render.js";
 // Girar las tarjetas
 import { flipCard } from "./modules/_turn-over-cards.js";
 // Pequeñas funciones
