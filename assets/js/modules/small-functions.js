@@ -1,5 +1,5 @@
 // Array de JSONs con los tres iconos del reverso
-import { allLevelsIcons } from "./_images-jsons.js";
+import { allLevelsIcons } from "./images-jsons.js";
 
 /**
  * Duplica las imágenes de las tarjetas

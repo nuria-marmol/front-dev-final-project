@@ -1,5 +1,5 @@
 // Barra de progreso personalizada
-import { growProgressFill } from "./_custom-progress-bar.js";
+import { growProgressFill } from "./custom-progress-bar.js";
 
 /**
  * Da la vuelta solo a dos tarjetas. Llama a la función de comprobar tarjetas

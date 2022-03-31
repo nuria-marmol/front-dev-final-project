@@ -16,12 +16,12 @@
       <change beforePath="$PROJECT_DIR$/assets/img/icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/share.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/img/icons/timer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/timer.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_classes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_custom-progress-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_custom-progress-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_images-jsons.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_images-jsons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_render.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_turn-over-cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/_turn-over-cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_custom-progress-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/custom-progress-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_images-jsons.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/images-jsons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/small-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/_turn-over-cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/turn-over-cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/render.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" afterDir="false" />

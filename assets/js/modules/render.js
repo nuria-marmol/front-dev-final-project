@@ -1,7 +1,7 @@
 // Pequeñas funciones
-import { setLevelIcons, shufflePics } from "./_small-functions.js";
+import { setLevelIcons, shufflePics } from "./small-functions.js";
 // Clases CSS
-import { renderClasses } from "./_classes.js";
+import { renderClasses } from "./classes.js";
 
 /**
  * Genera las imágenes de las tarjetas. Llama a la función que obtiene los iconos

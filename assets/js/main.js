@@ -1,12 +1,12 @@
 // --- Importaciones ---
 /* JSONs con las fotografías */
-import { level1Pics, level2Pics, level3Pics } from "./modules/_images-jsons.js";
+import { level1Pics, level2Pics, level3Pics } from "./modules/images-jsons.js";
 // Cargar las tarjetas
 import { renderLevel } from "./modules/render.js";
 // Girar las tarjetas
-import { flipCard } from "./modules/_turn-over-cards.js";
+import { flipCard } from "./modules/turn-over-cards.js";
 // Pequeñas funciones
-import { obtainPairs } from "./modules/_small-functions.js";
+import { obtainPairs } from "./modules/small-functions.js";
 
 // --- Variables ---
 /* Concatenamos cada array de fotografías para tenerlas duplicadas */
