@@ -2,51 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c5f48b-273d-4fc1-bf7b-1479689e3d1a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/front-dev-final-project.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/front-dev-final-project.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/alert.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/alert.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/arrows.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/arrows.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/flower.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/flower.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/maze.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/maze.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/moon.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/moon.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/play.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/play.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/share.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/share.svg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/img/icons/timer.svg" beforeDir="false" afterPath="$PROJECT_DIR$/assets/img/icons/timer.svg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/classes.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_custom-progress-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/custom-progress-bar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_images-jsons.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/images-jsons.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_small-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/small-functions.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/js/modules/_turn-over-cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/turn-over-cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/custom-progress-bar.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/custom-progress-bar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/images-jsons.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/images-jsons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/modules/render.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/render.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_mixins.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/abstracts/_variables.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/base/_base.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/base/_typography.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_buttons.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/components/_progress-bar.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/components/_progress-bar.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_footer.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_grid.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_grid.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_variables.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_variables.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_base.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_fonts.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/base/_typography.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/main/vendors/_normalize.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/vendors/_normalize.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/mobile.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/base/_typography.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/mobile/layout/_header.sass" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dist/mobile.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/mobile.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/small-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/small-functions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/js/modules/turn-over-cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/turn-over-cards.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prepros.config" beforeDir="false" afterPath="$PROJECT_DIR$/prepros.config" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -5,7 +5,7 @@ export const level1Pics = [
         // Ruta pensando en que tendrá que llegar a ellas desde index.html
         name: "assets/img/level1/ferris-wheel.jpg",
         description: "Ferris wheel"
-    }/*,
+    },
     {
         name: "assets/img/level1/harbour.jpg",
         description: "Harbour at night"
@@ -21,14 +21,14 @@ export const level1Pics = [
     {
         name: "assets/img/level1/stars.jpg",
         description: "Paper star lights"
-    }*/
+    }
 ]
 
 export const level2Pics= [
     {
         name: "assets/img/level2/bridge.jpg",
         description: "Bridge"
-    }/*,
+    },
     {
         name: "assets/img/level2/church.jpg",
         description: "Church"
@@ -56,14 +56,14 @@ export const level2Pics= [
     {
         name: "assets/img/level2/woman.jpg",
         description: "Graffiti of a woman"
-    }*/
+    }
 ]
 
 export const level3Pics = [
     {
         name: "assets/img/level3/bellflowers.jpg",
         description: "Purple bellflowers"
-    }/*,
+    },
     {
         name: "assets/img/level3/branches.jpg",
         description: "Branches from a tree"
@@ -99,7 +99,7 @@ export const level3Pics = [
     {
         name: "assets/img/level3/yellow-flower.jpg",
         description: "Yellow flower"
-    }*/
+    }
 ]
 
 // Este no lo tendremos que concatenar
