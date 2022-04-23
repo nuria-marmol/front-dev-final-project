@@ -45,13 +45,13 @@
         <!-- Los tres niveles del juego. El fondo cambia dependiendo del nivel, así como el reverso de las tarjetas. -->
         <section class="all-levels all-levels--hide" id="all-levels">
             <div class="all-levels__timer">
-                <button class="all-levels-timer__button">
+                <button class="all-levels-timer__button" id="timer-icon">
                     <img class="all-levels-timer__image" src="assets/img/icons/timer.svg" alt="Timer">
                 </button>
                 <!-- Desaparecerá al cabo de unos segundos. -->
-                <p class="all-levels-timer__text">Timer is deactivated. Click to activate</p>
+                <p class="all-levels-timer__text" id="timer-message">Timer is deactivated. Click to activate</p>
                 <!-- Solo se mostrará cuando se active el temporizador. -->
-                <p class="all-levels-timer__countdown hidden">1:00</p>
+                <p class="all-levels-timer__countdown hidden" id="time-left">01:00</p>
             </div>
             <div class="container">
                 <!-- Tarjetas. Tendrá un display grid. -->
@@ -75,7 +75,7 @@
         <!-- Para los tres niveles, una vez se han superado. Esta sección también nos sirve para las pantallas que se muestran cuando se ha agotado el tiempo (si se ha activado el temporizador); simplemente cambiaremos la mayoría de los textos. -->
         <section class="between-levels between-levels--hide" id="between-levels">
             <h1 class="between-levels__title" id="in-between-text">Nice!</h1>
-            <p class="between-levels__text">You completed this level.</p>
+            <p class="between-levels__text" id="in-between-second-text">You completed this level.</p>
             <!-- Este párrafo mantiene siempre el mismo texto. -->
             <p class="between-levels__text">Now... what?</p>
             <div class="between-levels__buttons">

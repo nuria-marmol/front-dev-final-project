@@ -109,6 +109,8 @@ function changeBetweenLevelsTexts(currentLevel, messagesSection, button, footer,
         shareButton.classList.remove("hidden");
     } else {
         text.textContent = "Nice!";
+        // Por si el jugador inicia de nuevo el juego tras acabar el tercer nivel
+        button.textContent = "Next level";
         messagesSection.classList.remove("between-levels--first-change");
         messagesSection.classList.remove("between-levels--second-change");
     }

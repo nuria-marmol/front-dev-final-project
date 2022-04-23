@@ -7,6 +7,7 @@ import { renderLevel } from "./modules/render.js";
 import { flipCard } from "./modules/turn-over-cards.js";
 // Pequeñas funciones
 import { obtainPairs } from "./modules/small-functions.js";
+import { definingInterval } from "./modules/timer.js";
 
 // --- Variables ---
 /* Concatenamos cada array de fotografías para tenerlas duplicadas */
@@ -33,6 +34,7 @@ const skipButton = document.querySelector("#all-levels-next__button");
 const restartButton = document.querySelector("#restart-level");
 const nextButton = document.querySelector("#next-level");
 const shareButton = document.querySelector("#share-button");
+const timerIcon = document.querySelector("#timer-icon");
 
 // --- Funciones ---
 /**
@@ -160,6 +162,16 @@ function linkCopiedMessage() {
     },1500)
 }
 
+function timerInteraction() {
+    const timeLeft = document.querySelector("#time-left");
+    const timerMessage = document.querySelector("#timer-message");
+    timeLeft.classList.toggle("hidden");
+    timerMessage.classList.toggle("hidden");
+    if (timerMessage.classList.contains("hidden")) {
+        definingInterval(timeLeft, timerMessage, levelsSection, betweenLevelsSection, restartButton, nextButton, currentLevel);
+    }
+}
+
 renderLevel(level3Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
 flipCard(levelsSection, currentLevel, betweenLevelsSection, nextButton, footer, shareButton);
 
@@ -169,3 +181,4 @@ skipButton.addEventListener("click", skipLevel);
 restartButton.addEventListener("click", restartLevel);
 nextButton.addEventListener("click", nextLevel);
 shareButton.addEventListener("click", copyLink);
+timerIcon.addEventListener("click", timerInteraction);

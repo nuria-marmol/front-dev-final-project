@@ -9,7 +9,7 @@ export const level1Pics = [
     {
         name: "assets/img/level1/harbour.jpg",
         description: "Harbour at night"
-    },
+    }/*,
     {
         name: "assets/img/level1/psychedelic.jpg",
         description: "Psychedelic lights on a path"
@@ -21,7 +21,7 @@ export const level1Pics = [
     {
         name: "assets/img/level1/stars.jpg",
         description: "Paper star lights"
-    }
+    }*/
 ]
 
 export const level2Pics= [
@@ -32,7 +32,7 @@ export const level2Pics= [
     {
         name: "assets/img/level2/church.jpg",
         description: "Church"
-    },
+    }/*,
     {
         name: "assets/img/level2/deer.jpg",
         description: "Colorfull graffiti of a deer"
@@ -56,7 +56,7 @@ export const level2Pics= [
     {
         name: "assets/img/level2/woman.jpg",
         description: "Graffiti of a woman"
-    }
+    }*/
 ]
 
 export const level3Pics = [
@@ -67,7 +67,7 @@ export const level3Pics = [
     {
         name: "assets/img/level3/branches.jpg",
         description: "Branches from a tree"
-    },
+    }/*,
     {
         name: "assets/img/level3/daisies.jpg",
         description: "Yellow daisies"
@@ -99,7 +99,7 @@ export const level3Pics = [
     {
         name: "assets/img/level3/yellow-flower.jpg",
         description: "Yellow flower"
-    }
+    }*/
 ]
 
 // Este no lo tendremos que concatenar
