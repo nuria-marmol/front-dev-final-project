@@ -449,7 +449,7 @@ h1 {
 }
 
 .game-menu-start__image {
-  width: 3rem;
+  width: 2.7rem;
 }
 
 .between-levels-share__button {
@@ -799,7 +799,7 @@ h1 {
 
 /* Between levels section */
 .between-levels {
-  background-image: url("../assets/img/level1/smoke.jpg");
+  background-image: url("../assets/img/level1/smoke-full.jpg");
   background-position: top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -843,11 +843,11 @@ h1 {
 
 /* Añadir estas dos clases para cambiar la imagen de fondo */
 .between-levels--first-change {
-  background-image: url("../assets/img/level2/woman.jpg");
+  background-image: url("../assets/img/level2/woman-full.jpg");
   background-position: center;
 }
 
 .between-levels--second-change {
-  background-image: url("../assets/img/level3/yellow-flower.jpg");
+  background-image: url("../assets/img/level3/yellow-flower-full.jpg");
   background-position: center;
 }

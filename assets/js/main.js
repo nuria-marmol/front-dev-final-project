@@ -37,6 +37,19 @@ const shareButton = document.querySelector("#share-button");
 const timerIcon = document.querySelector("#timer-icon");
 
 // --- Funciones ---
+function playAnimation() {
+    if (!gameMenu.classList.contains("game-menu--hidden")) {
+        document.querySelector("#play-image").animate([
+            { transform: 'scale(1)' },
+            { transform: 'scale(1.2)' }
+            ], {
+                duration: 1500,
+                iterations: Infinity,
+                direction: "alternate"
+            })
+    }
+}
+
 /**
  * Inicia el juego
  */
@@ -172,13 +185,60 @@ function timerInteraction() {
     }
 }
 
+function timerIconAnimation() {
+    timerIcon.animate([
+        { transform: 'rotate(0deg)' },
+        { transform: 'rotate(7deg)' },
+        { transform: 'rotate(0deg)' },
+        { transform: 'rotate(-7deg)' },
+        { transform: 'rotate(0deg)' }
+    ], {
+        duration: 900,
+        iterations: 2
+    })
+}
+
+function skipIconAnimation() {
+    document.querySelector("#skip-icon").animate([
+        { transform: 'translateX(0)' },
+        { transform: 'translateX(.4rem)' },
+        { transform: 'translateX(0)' }
+    ], {
+        duration: 1000,
+        iterations: 1
+    })
+}
+
+function blurNextButton() {
+    nextButton.style.filter = "blur(.1rem)";
+}
+
+function removeNextButtonBlur() {
+    nextButton.style.filter = "blur(0)";
+}
+
+function blurRestartButton() {
+    restartButton.style.filter = "blur(.1rem)";
+}
+
+function removeRestartButtonBlur() {
+    restartButton.style.filter = "blur(0)";
+}
+
+playAnimation();
 renderLevel(level3Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
 flipCard(levelsSection, currentLevel, betweenLevelsSection, nextButton, footer, shareButton);
 
 // --- Eventos ---
 playButton.addEventListener("click", startGame);
 skipButton.addEventListener("click", skipLevel);
+skipButton.addEventListener("mouseenter", skipIconAnimation);
 restartButton.addEventListener("click", restartLevel);
+restartButton.addEventListener("mouseenter", blurNextButton);
+restartButton.addEventListener("mouseleave", removeNextButtonBlur);
 nextButton.addEventListener("click", nextLevel);
+nextButton.addEventListener("mouseenter", blurRestartButton);
+nextButton.addEventListener("mouseleave", removeRestartButtonBlur);
 shareButton.addEventListener("click", copyLink);
 timerIcon.addEventListener("click", timerInteraction);
+timerIcon.addEventListener("mouseenter", timerIconAnimation);
