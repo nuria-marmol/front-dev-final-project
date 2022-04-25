@@ -17,6 +17,10 @@ export function flipCard(currentSection, currentLevel, messagesSection, button, 
     allCards.forEach(function(card) {
         // Con cada una, al hacer clic
         card.addEventListener("click", function() {
+            const flipSound = document.querySelector("#flip-sound");
+            if (!card.classList.contains("all-levels-cards__back--turn")) {
+                flipSound.play();
+            }
             // Le añadimos la clase para girarla
             card.classList.add("all-levels-cards__back--turn");
             // Capturamos las tarjetas que aún NO se han adivinado
@@ -30,6 +34,7 @@ export function flipCard(currentSection, currentLevel, messagesSection, button, 
             // Para que NO se giren más de 2 tarjetas
             } else if (chosenCards.length > 2) {
                 card.classList.remove("all-levels-cards__back--turn");
+                flipSound.pause();
             }
         })
     })
@@ -49,9 +54,11 @@ export function flipCard(currentSection, currentLevel, messagesSection, button, 
  * @param {HTMLElement} shareButton El botón de compartir
  */
 function checkCards(chosenPics, chosenCards, allCards, currentSection,  currentLevel, messagesSection, button, footer, shareButton) {
+    const bellSound = document.querySelector("#bell-sound");
     // Si su descripción es la misma, es decir, si es la misma fotografía
     if (chosenPics[0].getAttribute("alt") === chosenPics[1].getAttribute("alt")) {
         setTimeout(function() {
+            bellSound.play();
             chosenPics.forEach(function(card) {
                 // A ambas les añadimos opacidad para que se fundan
                 card.classList.add("all-levels-cards-front__image--opacity");

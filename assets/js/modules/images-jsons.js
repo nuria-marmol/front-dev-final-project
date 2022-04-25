@@ -5,11 +5,11 @@ export const level1Pics = [
         // Ruta pensando en que tendrá que llegar a ellas desde index.html
         name: "assets/img/level1/ferris-wheel.jpg",
         description: "Ferris wheel"
-    }/*,
+    },
     {
         name: "assets/img/level1/harbour.jpg",
         description: "Harbour at night"
-    },
+    }/*,
     {
         name: "assets/img/level1/psychedelic.jpg",
         description: "Psychedelic lights on a path"
