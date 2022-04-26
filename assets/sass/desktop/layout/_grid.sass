@@ -3,13 +3,11 @@
     display: grid
     @include grid-cols-gap-width(repeat(5, 1fr), 1rem, 1.5rem, 90%)
     margin: 0 auto
-    //@include grid-cols-rows-cgap-rgap(repeat(5, 1fr), repeat(2, 1fr), 1rem, 1.5rem)
   &-cards__back
     background-color: $black-colour
     @include white-border
     /* Para que luego rote también su hijo, el div con la foto */
     transform-style: preserve-3d
-    //backface-visibility: hidden
     transition: 1s
   &-cards-back__image
     position: absolute

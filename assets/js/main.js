@@ -14,7 +14,6 @@ import { definingInterval } from "./modules/timer.js";
 const level1Pairs = obtainPairs(level1Pics);
 const level2Pairs = obtainPairs(level2Pics);
 const level3Pairs = obtainPairs(level3Pics);
-//window.level = 1;
 
 // Capturamos los elementos necesarios:
 /* Nuestra plantilla para las imágenes y su destino, el div que tiene el grid */
@@ -37,16 +36,23 @@ const shareButton = document.querySelector("#share-button");
 const timerIcon = document.querySelector("#timer-icon");
 
 // --- Funciones ---
+/**
+ * Reproduce una animación en el icono
+ */
 function playAnimation() {
+    // Si la sección (menú del juego) se muestra
     if (!gameMenu.classList.contains("game-menu--hidden")) {
+        // Capturamos el icono y lo animamos
         document.querySelector("#play-image").animate([
+            // Fotogramas clave
             { transform: 'scale(1)' },
             { transform: 'scale(1.2)' }
-            ], {
-                duration: 1500,
-                iterations: Infinity,
-                direction: "alternate"
-            })
+        ],{
+            // Opciones de sincronización
+            duration: 1500,
+            iterations: Infinity,
+            direction: "alternate"
+        })
     }
 }
 
@@ -132,7 +138,7 @@ function nextLevel() {
 
 /**
  * Oculta la pantalla intermedia, muestra la del nivel,
- * renderiza el nivel que corresponda y llama a la función de girar las tarjetas.
+ * renderiza el nivel que corresponde y llama a la función de girar las tarjetas.
  *
  * @param {Array} arrayPairs El array de tarjetas a cargar
  */
@@ -175,59 +181,84 @@ function linkCopiedMessage() {
     },1500)
 }
 
+/**
+ * Controla la interacción con el icono del temporizador
+ */
 function timerInteraction() {
+    // Capturamos el párrafo donde se muestra el tiempo restante
     const timeLeft = document.querySelector("#time-left");
+    // Capturamos también el mensaje que le indica al jugador que puede activar el temporizador
     const timerMessage = document.querySelector("#timer-message");
+    // Vamos mostrando/ocultando cada uno en lugar del otro
     timeLeft.classList.toggle("hidden");
     timerMessage.classList.toggle("hidden");
+    // Si el párrafo del tiempo restante se muestra, llamamos a la función que define el intervalo
     if (timerMessage.classList.contains("hidden")) {
         definingInterval(timeLeft, timerMessage, levelsSection, betweenLevelsSection, restartButton, nextButton, currentLevel);
     }
 }
 
+/**
+ * Aplica una animación al icono del temporizador
+ */
 function timerIconAnimation() {
     timerIcon.animate([
+        // Fotogramas clave
         { transform: 'rotate(0deg)' },
         { transform: 'rotate(7deg)' },
         { transform: 'rotate(0deg)' },
         { transform: 'rotate(-7deg)' },
         { transform: 'rotate(0deg)' }
     ], {
+        // Opciones de sincronización
         duration: 900,
         iterations: 2
     })
 }
 
+/**
+ * Reproduce una pequeña animación en el icono para saltar el nivel actual
+ */
 function skipIconAnimation() {
     document.querySelector("#skip-icon").animate([
+        // Fotogramas clave
         { transform: 'translateX(0)' },
         { transform: 'translateX(.4rem)' },
         { transform: 'translateX(0)' }
     ], {
+        // Opciones de sincronización
         duration: 1000,
         iterations: 1
     })
 }
 
+/**
+ * Desenfoca el botón de avanzar de nivel
+ */
 function blurNextButton() {
     nextButton.style.filter = "blur(.1rem)";
 }
 
+/**
+ * Vuelve a enfocar el botón anterior
+ */
 function removeNextButtonBlur() {
-    nextButton.style.filter = "blur(0)";
+    nextButton.removeAttribute("style");
 }
 
+/**
+ * Desenfoca el botón de reiniciar el nivel
+ */
 function blurRestartButton() {
     restartButton.style.filter = "blur(.1rem)";
 }
 
+/**
+ * Enfoca de nuevo el botón anterior
+ */
 function removeRestartButtonBlur() {
-    restartButton.style.filter = "blur(0)";
+    restartButton.removeAttribute("style");
 }
-
-playAnimation();
-renderLevel(level3Pairs, cardsTemplate, templateTarget, levelsSection, currentLevel, skipButton, level1Pairs, level2Pairs);
-flipCard(levelsSection, currentLevel, betweenLevelsSection, nextButton, footer, shareButton);
 
 // --- Eventos ---
 playButton.addEventListener("click", startGame);
@@ -242,3 +273,6 @@ nextButton.addEventListener("mouseleave", removeRestartButtonBlur);
 shareButton.addEventListener("click", copyLink);
 timerIcon.addEventListener("click", timerInteraction);
 timerIcon.addEventListener("mouseenter", timerIconAnimation);
+
+// --- Inicio ---
+playAnimation();

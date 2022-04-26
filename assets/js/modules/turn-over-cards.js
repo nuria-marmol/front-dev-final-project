@@ -1,5 +1,6 @@
 // Barra de progreso personalizada
 import { growProgressFill } from "./custom-progress-bar.js";
+import { stopTimer } from "./timer.js";
 
 /**
  * Da la vuelta solo a dos tarjetas. Llama a la función de comprobar tarjetas
@@ -17,7 +18,9 @@ export function flipCard(currentSection, currentLevel, messagesSection, button, 
     allCards.forEach(function(card) {
         // Con cada una, al hacer clic
         card.addEventListener("click", function() {
+            // Capturamos el audio
             const flipSound = document.querySelector("#flip-sound");
+            // Si la tarjeta aún NO se ha girado, lo reproducimos
             if (!card.classList.contains("all-levels-cards__back--turn")) {
                 flipSound.play();
             }
@@ -31,7 +34,7 @@ export function flipCard(currentSection, currentLevel, messagesSection, button, 
             if (chosenCards.length === 2) {
                 // Comprobamos si son iguales
                 checkCards(chosenPics, chosenCards, allCards, currentSection, currentLevel, messagesSection, button, footer, shareButton);
-            // Para que NO se giren más de 2 tarjetas
+            // Para que NO se giren más de 2 tarjetas NI se reproduzca el audio al clicar en más tarjetas
             } else if (chosenCards.length > 2) {
                 card.classList.remove("all-levels-cards__back--turn");
                 flipSound.pause();
@@ -54,11 +57,15 @@ export function flipCard(currentSection, currentLevel, messagesSection, button, 
  * @param {HTMLElement} shareButton El botón de compartir
  */
 function checkCards(chosenPics, chosenCards, allCards, currentSection,  currentLevel, messagesSection, button, footer, shareButton) {
+    // Capturamos el audio
     const bellSound = document.querySelector("#bell-sound");
     // Si su descripción es la misma, es decir, si es la misma fotografía
     if (chosenPics[0].getAttribute("alt") === chosenPics[1].getAttribute("alt")) {
         setTimeout(function() {
+            // Reproducimos el audio con algo de retardo
             bellSound.play();
+        }, 500)
+        setTimeout(function() {
             chosenPics.forEach(function(card) {
                 // A ambas les añadimos opacidad para que se fundan
                 card.classList.add("all-levels-cards-front__image--opacity");
@@ -72,10 +79,18 @@ function checkCards(chosenPics, chosenCards, allCards, currentSection,  currentL
             })
             // Si todas las tarjetas ya se han emparejado
             if (guessedCards.length === allCards.length) {
+                // Paramos el temporizador
+                stopTimer();
                 setTimeout(function() {
                     // Ocultamos la pantalla actual y mostramos los mensajes
                     messagesSection.classList.remove("between-levels--hide");
                     currentSection.classList.add("all-levels--hide");
+                    // Reseteamos el contenido del párrafo donde se mostraba el tiempo restante
+                    const timeLeft = document.querySelector("#time-left");
+                    timeLeft.textContent = "01:00";
+                    /* Lo ocultamos y mostramos el otro p donde se informa de que se puede activar el temporizador */
+                    timeLeft.classList.add("hidden");
+                    document.querySelector("#timer-message").classList.remove("hidden");
                     changeBetweenLevelsTexts(currentLevel, messagesSection, button, footer, shareButton);
                 }, 1200)
             }
@@ -121,20 +136,4 @@ function changeBetweenLevelsTexts(currentLevel, messagesSection, button, footer,
         messagesSection.classList.remove("between-levels--first-change");
         messagesSection.classList.remove("between-levels--second-change");
     }
-    /*// Si las tarjetas que hemos emparejado eran las del nivel 1
-    if (guessedCards.length == level1.length) {
-        // Modificamos el texto del h1
-        text.textContent = "Nice!";
-    // Si las tarjetas eran las del nivel 2
-    } else if (guessedCards.length == level2.length) {
-        text.textContent = "Great!";
-    // Si eran las del 3
-    } else {
-        text.textContent = "Impressive!";
-        // Cambiamos el contenido textual del botón para pasar al siguiente nivel, ya que en esta pantalla nos lleva al nivel 1 otra vez
-        button.textContent = "Play again";
-        // Mostramos el footer y el botón de compartir
-        footer.classList.remove("hidden");
-        shareButton.classList.remove("hidden");
-    }*/
 }

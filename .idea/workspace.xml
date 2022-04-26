@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="33c5f48b-273d-4fc1-bf7b-1479689e3d1a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/assets/sound/bell.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/sound/flip.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/main.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/modules/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/classes.js" afterDir="false" />
@@ -13,6 +11,13 @@
       <change beforePath="$PROJECT_DIR$/assets/js/modules/small-functions.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/small-functions.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/modules/timer.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/timer.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/js/modules/turn-over-cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/assets/js/modules/turn-over-cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/base/_base.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/base/_base.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/desktop/layout/_grid.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/desktop/layout/_grid.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main/_main.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/_main.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/abstracts/_mixins.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main/base/_reset.sass" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" beforeDir="false" afterPath="$PROJECT_DIR$/assets/sass/main/layout/_header.sass" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/desktop.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/desktop.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -80,7 +85,7 @@
       <workItem from="1648208877341" duration="16521000" />
       <workItem from="1648450886540" duration="8982000" />
       <workItem from="1648468412820" duration="38398000" />
-      <workItem from="1650642892464" duration="43274000" />
+      <workItem from="1650642892464" duration="51665000" />
     </task>
     <servers />
   </component>
