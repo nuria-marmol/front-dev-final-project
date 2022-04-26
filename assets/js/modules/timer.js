@@ -89,8 +89,8 @@ function outOfTimeMessage(timeLeft, timerMessage, levelsSection, betweenLevelsSe
         // Mostramos de nuevo el otro párrafo en su lugar
         timerMessage.classList.remove("hidden");
         // Ocultamos la pantalla del nivel y mostramos la intermedia
-        levelsSection.classList.add("all-levels--hide");
         betweenLevelsSection.classList.remove("between-levels--hide");
+        levelsSection.classList.add("all-levels--hide");
         // Cambiamos la imagen de fondo
         if (currentLevel[1].textContent == "2") {
             betweenLevelsSection.classList.add("between-levels--first-change");

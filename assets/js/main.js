@@ -1,13 +1,14 @@
 // --- Importaciones ---
 /* JSONs con las fotografías */
 import { level1Pics, level2Pics, level3Pics } from "./modules/images-jsons.js";
+// Pequeñas funciones
+import { obtainPairs } from "./modules/small-functions.js";
 // Cargar las tarjetas
 import { renderLevel } from "./modules/render.js";
 // Girar las tarjetas
 import { flipCard } from "./modules/turn-over-cards.js";
-// Pequeñas funciones
-import { obtainPairs } from "./modules/small-functions.js";
-import { definingInterval } from "./modules/timer.js";
+// Temporizador
+import { definingInterval, stopTimer } from "./modules/timer.js";
 
 // --- Variables ---
 /* Concatenamos cada array de fotografías para tenerlas duplicadas */
@@ -27,6 +28,10 @@ const betweenLevelsSection = document.querySelector("#between-levels");
 const footer = document.querySelector("#footer");
 // Los dos spans donde se muestra el nivel actual (pantalla del nivel y pantalla intermedia)
 const currentLevel = document.querySelectorAll(".level-info__current-level");
+// El párrafo donde se indica el tiempo restante
+const timeLeft = document.querySelector("#time-left");
+// El mensaje que le indica al jugador que puede activar el temporizador
+const timerMessage = document.querySelector("#timer-message");
 // Los botones
 const playButton = document.querySelector("#play-button");
 const skipButton = document.querySelector("#all-levels-next__button");
@@ -49,8 +54,10 @@ function playAnimation() {
             { transform: 'scale(1.2)' }
         ],{
             // Opciones de sincronización
-            duration: 1500,
+            duration: 1400,
+            // Para que se reproduzca un número infinito de veces
             iterations: Infinity,
+            // Para que vaya alternando entre dirección normal (orden definido) e inversa
             direction: "alternate"
         })
     }
@@ -74,6 +81,14 @@ function startGame() {
  * Salta al siguiente nivel
  */
 function skipLevel() {
+    // Paramos el temporizador
+    stopTimer();
+    // Reseteamos el contenido del párrafo donde se mostraba el tiempo restante
+    timeLeft.textContent = "01:00";
+    /* Lo ocultamos y mostramos el otro p donde se informa de que se puede activar el temporizador */
+    timeLeft.classList.add("hidden");
+    timerMessage.classList.remove("hidden");
+
     switch (currentLevel[0].textContent) {
         // Si el primer span, el de esta pantalla, indica que estamos en el nivel 1
         case "1":
@@ -185,10 +200,6 @@ function linkCopiedMessage() {
  * Controla la interacción con el icono del temporizador
  */
 function timerInteraction() {
-    // Capturamos el párrafo donde se muestra el tiempo restante
-    const timeLeft = document.querySelector("#time-left");
-    // Capturamos también el mensaje que le indica al jugador que puede activar el temporizador
-    const timerMessage = document.querySelector("#timer-message");
     // Vamos mostrando/ocultando cada uno en lugar del otro
     timeLeft.classList.toggle("hidden");
     timerMessage.classList.toggle("hidden");
@@ -205,13 +216,13 @@ function timerIconAnimation() {
     timerIcon.animate([
         // Fotogramas clave
         { transform: 'rotate(0deg)' },
-        { transform: 'rotate(7deg)' },
+        { transform: 'rotate(6deg)' },
         { transform: 'rotate(0deg)' },
-        { transform: 'rotate(-7deg)' },
+        { transform: 'rotate(-6deg)' },
         { transform: 'rotate(0deg)' }
     ], {
         // Opciones de sincronización
-        duration: 900,
+        duration: 700,
         iterations: 2
     })
 }

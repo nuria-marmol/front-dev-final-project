@@ -1,5 +1,6 @@
 // Barra de progreso personalizada
 import { growProgressFill } from "./custom-progress-bar.js";
+// Temporizador
 import { stopTimer } from "./timer.js";
 
 /**
@@ -118,6 +119,10 @@ function checkCards(chosenPics, chosenCards, allCards, currentSection,  currentL
 function changeBetweenLevelsTexts(currentLevel, messagesSection, button, footer, shareButton) {
     // Capturamos el h1
     const text = document.querySelector("#in-between-text");
+    // Capturamos el p
+    const text2 = document.querySelector("#in-between-second-text");
+    // Nos aseguramos de que este párrafo tenga este contenido (por si se había cambiado al usar el timer)
+    text2.textContent = "You completed this level.";
     if (currentLevel[1].textContent == "2") {
         text.textContent = "Great!";
         messagesSection.classList.add("between-levels--first-change");
